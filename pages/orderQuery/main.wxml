@@ -34,8 +34,8 @@
                     <view class="_div data-v-1b76ebe9 actBtnBox" wx:if="{{list.currBdOrder}}">
                         <view bindtap="getClientInfo" class="_p data-v-1b76ebe9 btnStyle" data-user="{{item}}"
                             >客户信息</view>
-                        <view bindtap="handleProxy" class="_p data-v-1b76ebe9 btnStyle btnL" data-comkey="{{$k}}"
-                            data-eventid="{{'1-'+index}}">订单详情</view>
+                        <view bindtap="getOrderDetail" class="_p data-v-1b76ebe9 btnStyle btnL" data-user="{{list}}"
+                            >订单详情</view>
                     </view>
                 </view>
             </view>

@@ -38,5 +38,11 @@ Page({
     wx.navigateTo({
       url: '../repayment/personalInfo/main?clientNo='+val.currentTarget.dataset.user.dataSource.adminUserNo,
     })
+  },
+  getOrderDetail(val){
+    console.log("--",val)
+    wx.navigateTo({
+      url: '../orderQuery/orderDetail/main?orderNo='+val.currentTarget.dataset.user.orderNo,
+    })
   }
 });

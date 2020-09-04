@@ -62,7 +62,8 @@ export  const oderList = [{
       orderDate: '2020-01-04',
       mobile: '18278904219',
       bdName: '张经理',
-      currBdOrder: true
+      currBdOrder: true,
+      orderNo:1
     }]
   },
   loanNo: 1,
@@ -78,7 +79,8 @@ export  const oderList = [{
       orderDate: '2020-01-04',
       mobile: '18278904219',
       bdName: '张经理',
-      currBdOrder: true
+      currBdOrder: true,
+      orderNo:1
     }]
   },
   loanNo: 1,
@@ -95,13 +97,15 @@ export  const oderList = [{
       orderDate: '2020-01-04',
       mobile: '18278904219',
       bdName: '张经理',
-      currBdOrder: true
+      currBdOrder: true,
+      orderNo:1
     },
       {
       orderDate: '2020-01-04',
       mobile: '18278904219',
       bdName: '张经理',
-      currBdOrder: true
+      currBdOrder: true,
+      orderNo:1
     },
   ]
   },
@@ -118,7 +122,8 @@ export  const oderList = [{
       orderDate: '2020-01-04',
       mobile: '18278904219',
       bdName: '张经理',
-      currBdOrder: true
+      currBdOrder: true,
+      orderNo:1
     }]
   },
   loanNo: 1,
@@ -134,7 +139,8 @@ export  const oderList = [{
       orderDate: '2020-01-04',
       mobile: '18278904219',
       bdName: '张经理',
-      currBdOrder: true
+      currBdOrder: true,
+      orderNo:1
     }]
   },
   loanNo: 1,
@@ -206,4 +212,29 @@ export const clientDetail = {
     contractPhone: '127803348355',
     contractRelation:'父子'
   }]
+}
+
+export const orderDetail = {
+  tenderName:'张超',
+  orderDate:'2020-02-19 03-03-29',
+  hospital:'南宁市美丽有约医疗美容医院',
+  orderAmount:1200,
+  loanTerm:'12',
+  repayWay:'等本等息',
+  fundChannel:'南宁小贷',
+  longStatusName:'已作废',
+  orderBalance:'0.0',
+  contracts:[
+    {
+      name:'丽人贷免责协议',
+    },
+    {
+      name:'丽人贷生命力协议',
+    },
+    {
+      name:'丽人贷意外协议',
+    },{
+      name:'丽人贷ee协议',
+    }
+  ]
 }
