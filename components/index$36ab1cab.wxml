@@ -1,0 +1,6 @@
+<template name="index$36ab1cab">
+    <view class="_div data-v-0e3ac86c nonePage">
+        <image alt class="_img data-v-0e3ac86c noneImg" mode="scaleToFill" src="{{img}}"></image>
+        <view class="_div data-v-0e3ac86c tigsText">暂无任何记录</view>
+    </view>
+</template>

@@ -1,0 +1,27 @@
+./static/css/vendor.wxsswx-page.data-v-2ca2ff1b {
+    background-color: #fff;
+    height: 100%;
+}
+
+.listBox.data-v-2ca2ff1b {
+    padding: 0 30rpx;
+    margin-bottom: 40rpx;
+}
+
+.listBox ._li.data-v-2ca2ff1b {
+    overflow: hidden;
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listBox ._li .title.data-v-2ca2ff1b {
+    font-size: 30rpx;
+    margin-right: 15rpx;
+}
+
+.listBox ._li .infoValue.data-v-2ca2ff1b {
+    font-size: 30rpx;
+}

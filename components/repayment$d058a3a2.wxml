@@ -1,0 +1,13 @@
+<template name="repayment$d058a3a2">
+    <view class="_div data-v-196c75a0 RDPage">
+        <view class="_div data-v-196c75a0 {{[isShow?'RDPageList':'']}}" wx:if="{{haveData==1}}">
+            <template is="index$6e62ed5e" data="{{...$root[$kk+'0-'+index],$root:$root}}" wx:for="{{withholdList}}" wx:key="index"></template>
+            <button bindtap="handleProxy" class="_button data-v-196c75a0 RDPageFontBtn" data-comkey="{{$k}}" data-eventid="{{'0'}}" wx:if="{{isBuildWithholdBnt}}">新增扣款单</button>
+        </view>
+        <view class="_div data-v-196c75a0" wx:if="{{haveData==0}}">
+            <template is="index$36ab1cab" data="{{...$root[$kk+'1'],$root:$root}}"></template>
+        </view>
+    </view>
+</template>
+<import src="index$6e62ed5e"></import>
+<import src="index$36ab1cab"></import>

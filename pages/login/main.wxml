@@ -1,0 +1,23 @@
+<view class="_div data-v-122a919a login-page">
+    <view class="_div data-v-122a919a logo-item">
+        <view class="_div data-v-122a919a logo-img"></view>
+        <view class="_p data-v-122a919a">移动办单工具</view>
+    </view>
+    <view class="_div data-v-122a919a section">
+        <view class="_div data-v-122a919a input-group">
+            <input bindinput="handleInput" class="_input data-v-122a919a" data-eventname="{{'cell'}}" maxlength="11"
+                placeholder="请输入手机号" type="number" value="{{cell}}"></input>
+        </view>
+        <view class="_div data-v-122a919a input-group">
+            <input bindinput="handleInput" class="_input data-v-122a919a smsCode" data-eventname="{{'code'}}"
+                placeholder="请输入验证码" type="text" value="{{verifyCode}}"></input>
+            <button bindtap="getAuthCode" class="_button data-v-122a919a code-btn" data-eventname="{{'2'}}"
+                disabled="{{countdownFlag}}">{{countdownVal}}</button>
+        </view>
+        <view class="_div data-v-122a919a btn-area">
+            <button bindtap="login" class="_button data-v-122a919a" data-eventname="{{'3'}}"
+                disabled="{{disabled}}" size="primarySize" type="primary">登录</button>
+        </view>
+        <view class="_p data-v-122a919a versionOn">当前版本:{{miniVer}}</view>
+    </view>
+</view>

@@ -1,0 +1,14 @@
+<template name="index$5b3d60dd">
+    <view class="_div data-v-479f441e stepProgress">
+        <view class="_ul data-v-479f441e progress">
+            <view class="_div data-v-479f441e baseLine"></view>
+            <view class="_div data-v-479f441e baseLineOn" style=" {{'width:'+(step-1)/(stepLength-1)*autoWidth+'px'+';'}}"></view>
+            <view class="_li data-v-479f441e {{item}}" key="{{index}}" trackBy="index" wx:for="{{itemClasses}}" wx:key="index"></view>
+        </view>
+        <view class="_ul data-v-479f441e progressText">
+            <view class="_li data-v-479f441e {{item}}" key="{{index}}" trackBy="index" wx:for="{{itemClasses}}" wx:key="index">
+                <label class="_span data-v-479f441e" wx:if="{{item=='on'}}">{{stepOn}}</label>
+            </view>
+        </view>
+    </view>
+</template>

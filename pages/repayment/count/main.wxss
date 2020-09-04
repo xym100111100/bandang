@@ -1,0 +1,68 @@
+./static/css/vendor.wxss.count.data-v-76961ab8 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #fff;
+}
+
+.count .infoBox.data-v-76961ab8 {
+    padding: 0 32rpx;
+}
+
+.count .infoBox ._h2.data-v-76961ab8 {
+    font-size: 32rpx;
+    padding: 20rpx;
+}
+
+.count .countBtn.data-v-76961ab8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20rpx;
+    background: #468cee;
+    border-radius: 4rpx;
+    margin: 30rpx 40rpx;
+    color: #fff;
+    font-size: 30rpx;
+}
+
+.List.data-v-76961ab8 {
+    display: flex;
+    justify-content: space-between;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAEFCu8CAAAAAXNSR0IArs4c6QAAAbBJREFUSA3NVD1LBDEQXfU6v7AQBBGxEQsVtVO8X+8PECwsPT9LQfHsLHxvNxMm2SSTda8wkJvPN2+SnUvTFNZaKjbVzsDQgVafLivXj9LTqi+2lI437Oc8FbuE06NTCa1vJYoQQd9H5PcmEw5o5Rpiwlwfksl63WpD9GynQSDuVtAieWZSf4pDpAUk4Ah7Hzs4fu6UUlik/gyvcM5qgVLgCkrbZS2QZ5049A2lBewBHNgUVmGzwKCELWRf5xCludoDiK0GEyOFSsA7JMk/sQe2JocfexebBJyeZ+x2WUAmJcE1wCS4FkgwB36HCtZ36XK6lO53HeLMOdj6e81kaNALQI8sYAGTIAJLrfI/KO15JoK4SsDDLqXpgZy/KEqFi8BSkPczuLB1qTnCCwRWVZCfdqbsrDpk4HSRLxjb2HLCDei9l1cDRP/rCQXPCTnBnojDyeyJxxIKTzXxoggt4jckPDBp0YSa+BRGPCP38d0LYIzkc8HvGpPN4at6pGrJSXSMHR8ieDkWcaVVRNL1GMJBRGMJORCbUsTJ4OqimDfj+/YBQ2FxPm0cjCds2v9z/QILyDtOKlTKywAAAABJRU5ErkJggg==) 100% no-repeat;
+    background-size: 30rpx;
+}
+
+.List .ListRight.data-v-76961ab8 {
+    width: 340rpx;
+}
+
+.count ._li.data-v-76961ab8 {
+    padding: 20rpx;
+}
+
+.flexLayout.data-v-76961ab8 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #f3f3f3;
+    padding: 20rpx;
+    font-size: 30rpx;
+}
+
+.flexLayout ._p.data-v-76961ab8:first-of-type {
+    color: #808695;
+}
+
+.flexLayout ._p.data-v-76961ab8:nth-of-type(2) {
+    color: #468cee;
+}
+
+.topTip.data-v-76961ab8 {
+    border-top: 2rpx solid #ffd77a;
+    border-bottom: 2rpx solid #ffd77a;
+    background-color: #fff9e6;
+    color: #515a6e;
+    padding: 10rpx 20rpx;
+    font-size: 26rpx;
+}

@@ -1,0 +1,18 @@
+<template name="merchants$6722e97d">
+    <view class="_div data-v-80ede748 merchants-page">
+        <view class="_div data-v-80ede748 search-item">
+            <icon class="_icon data-v-80ede748 search-icon" size="17" type="search"></icon>
+            <input bindconfirm="handleProxy" bindinput="handleProxy" class="_input data-v-80ede748" confirmType="search" data-comkey="{{$k}}" data-eventid="{{'0'}}" placeholder="{{searchPlace}}" type="text" value="{{searchVal}}"></input>
+        </view>
+        <view class="_div data-v-80ede748 merchants-list" wx:if="{{nonepageFlag}}">
+            <template is="card$0a8b6143" data="{{...$root[$kk+'0-'+index],$root:$root}}" wx:for="{{merchantsList}}" wx:key="index"></template>
+        </view>
+        <view class="_div data-v-80ede748" wx:else>
+            <template is="index$36ab1cab" data="{{...$root[$kk+'1'],$root:$root}}"></template>
+        </view>
+        <template is="index$f4bdd05c" data="{{...$root[$kk+'2'],$root:$root}}" wx:if="{{isShowQrcode}}"></template>
+    </view>
+</template>
+<import src="card$0a8b6143"></import>
+<import src="index$36ab1cab"></import>
+<import src="index$f4bdd05c"></import>

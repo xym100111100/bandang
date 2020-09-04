@@ -1,0 +1,72 @@
+<template name="orderQuery$84a0bf64">
+    <view class="_div data-v-1ff94062">
+        <view class="_div data-v-1ff94062 orderQueryBox">
+            <view class="_div data-v-1ff94062 nameBox flex-between">
+                <view class="_p data-v-1ff94062">
+                    <label class="_span data-v-1ff94062">{{loanTradeDetail.tenderName}}</label>
+                </view>
+                <view class="_p data-v-1ff94062 idCard">
+                    <label class="_span data-v-1ff94062">{{loanTradeDetail.orderDate}}</label>
+                </view>
+            </view>
+            <view class="_div data-v-1ff94062 cutOffRule">
+                <label class="_span data-v-1ff94062 leftCricular"></label>
+                <label class="_span data-v-1ff94062 rightCricular"></label>
+            </view>
+            <view class="_ul data-v-1ff94062">
+                <view class="_li data-v-1ff94062">
+                    <view class="_div data-v-1ff94062 itemBox">
+                        <view class="_p data-v-1ff94062 flexLayout">
+                            <label class="_span data-v-1ff94062">医院名称</label>
+                            <label class="_span data-v-1ff94062">{{loanTradeDetail.hospital||'--'}}</label>
+                        </view>
+                        <view class="_p data-v-1ff94062 flexLayout">
+                            <label class="_span data-v-1ff94062">借款金额</label>
+                            <label class="_span data-v-1ff94062">{{loanTradeDetail.orderAmount||'0.00'}}</label>
+                        </view>
+                        <view class="_p data-v-1ff94062 flexLayout">
+                            <label class="_span data-v-1ff94062">借款期限</label>
+                            <label class="_span data-v-1ff94062">{{loanTradeDetail.loanTerm||'--'}}</label>
+                        </view>
+                        <view class="_p data-v-1ff94062 flexLayout">
+                            <label class="_span data-v-1ff94062">还款方式</label>
+                            <label class="_span data-v-1ff94062">{{loanTradeDetail.repayWay||'--'}}</label>
+                        </view>
+                        <view class="_p data-v-1ff94062 flexLayout">
+                            <label class="_span data-v-1ff94062">资金来源</label>
+                            <label class="_span data-v-1ff94062">{{loanTradeDetail.fundChannel||'--'}}</label>
+                        </view>
+                        <view class="_p data-v-1ff94062 flexLayout">
+                            <label class="_span data-v-1ff94062">借款状态</label>
+                            <label class="_span data-v-1ff94062">{{loanTradeDetail.longStatusName||'--'}}</label>
+                        </view>
+                        <view class="_p data-v-1ff94062 flexLayout">
+                            <label class="_span data-v-1ff94062">项目余额(元)</label>
+                            <label class="_span data-v-1ff94062">{{loanTradeDetail.orderBalance||'0.00'}}</label>
+                        </view>
+                        <view class="_p data-v-1ff94062 flexLayout" wx:if="{{repayPlanList}}">
+                            <label class="_span data-v-1ff94062">查看合同</label>
+                            <label class="_span data-v-1ff94062">
+                                <view bindtap="handleProxy" class="_em data-v-1ff94062" data-comkey="{{$k}}" data-eventid="{{'0-'+index}}" key="{{index}}" wx:for="{{loanTradeDetail.contracts}}" wx:key="index">《{{item.name||'--'}}》</view>
+                            </label>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <button bindtap="handleProxy" class="_button data-v-1ff94062 primary btn" data-comkey="{{$k}}" data-eventid="{{'1'}}" wx:if="{{repayPlanList}}">还款试算</button>
+        </view>
+        <view class="_div data-v-1ff94062">
+            <view class="_h1 data-v-1ff94062 repayTitle" wx:if="{{repayPlanList}}">还款计划</view>
+            <template is="index$3addc238" data="{{...$root[$kk+'0-'+index],$root:$root}}" wx:for="{{repayPlanList}}" wx:for-item="card" wx:key="index"></template>
+        </view>
+        <view class="_div data-v-1ff94062 hisMask" wx:if="{{contractBox}}">
+            <scroll-view class="_scroll-view data-v-1ff94062 scrollView" scrollY="{{true}}">
+                <view class="_div data-v-1ff94062">
+                    <image bindtap="handleProxy" class="_img data-v-1ff94062 close" data-comkey="{{$k}}" data-eventid="{{'3'}}" src="/static/images/preliminary/close.png"></image>
+                    <image class="_image data-v-1ff94062" key="{{index}}" mode="widthFix" src="{{item}}" style="width:100%;height:auto;" wx:for="{{contractUrl}}" wx:key="index"></image>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+</template>
+<import src="index$3addc238"></import>

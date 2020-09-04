@@ -1,0 +1,20 @@
+<template name="index$695754fa">
+    <view class="_div data-v-c8a9d70a search-item">
+        <view bindtap="handleProxy" class="_div data-v-c8a9d70a selectBox" data-comkey="{{$k}}" data-eventid="{{'1'}}" wx:if="{{selectList.length>0}}">
+            <view class="_p data-v-c8a9d70a">{{choseItem.name}}</view>
+            <image alt class="_img data-v-c8a9d70a {{[listFlag?'open':'']}}" src="/static/images/icon-aw.png"></image>
+            <view class="_ul data-v-c8a9d70a" hidden="{{!listFlag}}">
+                <view bindtap="handleProxy" class="_li data-v-c8a9d70a {{[choseItem.key==item.key?'active':'']}}" data-comkey="{{$k}}" data-eventid="{{'0-'+index}}" key="{{index}}" wx:for="{{selectList}}" wx:key="index">
+                    <view class="_p data-v-c8a9d70a">{{item.name}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="_div data-v-c8a9d70a inputBox">
+            <icon class="_icon data-v-c8a9d70a search-icon" size="14" type="search"></icon>
+            <input bindconfirm="handleProxy" bindinput="handleProxy" class="_input data-v-c8a9d70a" confirmType="search" data-comkey="{{$k}}" data-eventid="{{'2'}}" placeholder="{{placeholder}}" type="text" value="{{keywords}}"></input>
+        </view>
+        <view bindtap="handleProxy" class="_div data-v-c8a9d70a titleScreen" data-comkey="{{$k}}" data-eventid="{{'3'}}" wx:if="{{actionName}}">
+         {{actionName}}
+     </view>
+    </view>
+</template>

@@ -1,0 +1,30 @@
+<template name="repayment$6ee5024c">
+    <view class="_div data-v-5cdab68d screenPage">
+        <view class="_div data-v-5cdab68d selectList flex">
+            <view bindtap="handleProxy" class="_div data-v-5cdab68d selectListItem flex-item-1 {{[selectLeft?'leftBgColor':'']}}" data-comkey="{{$k}}" data-eventid="{{'0'}}">到期</view>
+            <view bindtap="handleProxy" class="_div data-v-5cdab68d selectListItem flex-item-1 {{[!selectLeft?'rightBgColor':'']}}" data-comkey="{{$k}}" data-eventid="{{'1'}}">逾期</view>
+        </view>
+        <picker bindchange="handleProxy" class="_picker data-v-5cdab68d" data-comkey="{{$k}}" data-eventid="{{'2'}}" disabled="{{startTimeDis}}" mode="date" value="thisTimeStart">
+            <view class="_div data-v-5cdab68d List">
+                <view class="_div data-v-5cdab68d ListLeft">开始时间</view>
+                <view class="_div data-v-5cdab68d ListRight">
+                    <label class="_span data-v-5cdab68d span-lh">{{thisTimeStart}}</label>
+                    <view class="_div data-v-5cdab68d rightIcom" wx:if="{{startTimeDis}}"></view>
+                    <image class="_image data-v-5cdab68d rightIcom" src="{{nextImgSrc}}" wx:else></image>
+                </view>
+            </view>
+        </picker>
+        <picker bindchange="handleProxy" class="_picker data-v-5cdab68d" data-comkey="{{$k}}" data-eventid="{{'3'}}" disabled="{{endTimeDis}}" mode="date" value="thisTimeEnd">
+            <view class="_div data-v-5cdab68d List">
+                <view class="_div data-v-5cdab68d ListLeft">结束时间</view>
+                <view class="_div data-v-5cdab68d ListRight">
+                    <label class="_span data-v-5cdab68d span-lh">{{thisTimeEnd}}</label>
+                    <view class="_div data-v-5cdab68d rightIcom"></view>
+                </view>
+            </view>
+        </picker>
+        <view class="_div data-v-5cdab68d footSite">
+            <button bindtap="handleProxy" class="_button data-v-5cdab68d footBtnSite" data-comkey="{{$k}}" data-eventid="{{'4'}}">确定</button>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,47 @@
+<view class="_div data-v-3b176c1f order-query-page">
+    <mp-searchbar></mp-searchbar>
+    <view class="_div data-v-3b176c1f">
+
+        <view class="_div data-v-1b76ebe9 orderQueryBox"  wx:for="{{listData}}" wx:key="index" >
+            <view class="_div data-v-1b76ebe9 nameBox flex-between">
+                <view class="_p data-v-1b76ebe9">
+                    <label class="_span data-v-1b76ebe9">{{item.dataSource.tenderName||'--'}}</label>
+                </view>
+                <view class="_p data-v-1b76ebe9 gree-icon" hidden="{{!item.dataSource.greenLoan}}">绿</view>
+            </view>
+            <view class="_div data-v-1b76ebe9 cutOffRule">
+                <label class="_span data-v-1b76ebe9 leftCricular"></label>
+                <label class="_span data-v-1b76ebe9 rightCricular"></label>
+            </view>
+            <view class="_ul data-v-1b76ebe9">
+                <view class="_li data-v-1b76ebe9" key="{{index}}" wx:for="{{item.dataSource.orderList}}" wx:for-item="list"
+                    wx:key="index">
+                    <view class="_p data-v-1b76ebe9 time">{{list.orderDate||'--'}}</view>
+                    <view class="_div data-v-1b76ebe9 bdBox">
+                        <view class="_p data-v-1b76ebe9 flexLayout">
+                            <label class="_span data-v-1b76ebe9">客户名称</label>
+                            <label class="_span data-v-1b76ebe9">{{item.dataSource.customerName}}</label>
+                        </view>
+                        <view class="_p data-v-1b76ebe9 flexLayout">
+                            <label class="_span data-v-1b76ebe9">客户手机号</label>
+                            <label class="_span data-v-1b76ebe9">{{list.mobile}}</label>
+                        </view>
+                        <view class="_p data-v-1b76ebe9 flexLayout">
+                            <label class="_span data-v-1b76ebe9">客户经理</label>
+                            <label class="_span data-v-1b76ebe9">{{list.bdName}}</label>
+                        </view>
+                    </view>
+                    <view class="_div data-v-1b76ebe9 actBtnBox" wx:if="{{list.currBdOrder}}">
+                        <view bindtap="handleProxy" class="_p data-v-1b76ebe9 btnStyle" data-comkey="{{$k}}"
+                            data-eventid="{{'0-'+index}}">客户信息</view>
+                        <view bindtap="handleProxy" class="_p data-v-1b76ebe9 btnStyle btnL" data-comkey="{{$k}}"
+                            data-eventid="{{'1-'+index}}">订单详情</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <!-- <template is="index$7ffe5630" data="{{...item}}" wx:for="{{listData}}" wx:key="index"></template> -->
+    </view>
+    <!-- <template is="index$36ab1cab" data="{{...$root[$kk+'2'],$root:$root}}" wx:if="{{listNone}}"></template> -->
+</view>

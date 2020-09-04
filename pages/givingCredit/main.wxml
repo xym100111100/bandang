@@ -1,0 +1,2 @@
+<import src="../../components/givingCredit$8a73eaaa"></import>
+<template is="givingCredit$8a73eaaa" data="{{...$root['0'],$root:$root}}"></template>

@@ -1,0 +1,7 @@
+<template name="index$1181186f">
+    <view class="_div data-v-ebae2e20 wrapper">
+        <button bindtap="handleProxy" class="_button data-v-ebae2e20 tip" data-comkey="{{$k}}" data-eventid="{{'0'}}">当前环境：{{envNow}}</button>
+        <template is="index$28129b31" data="{{...$root[$kk+'1'],$root:$root,$for:{default:'data-v-ebae2e20-default-1'},$slotdefault:'data-v-ebae2e20-default-1'}}"></template>
+    </view>
+</template>
+<import src="index$28129b31"></import>

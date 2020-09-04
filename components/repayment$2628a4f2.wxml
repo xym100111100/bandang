@@ -1,0 +1,95 @@
+<template name="repayment$2628a4f2">
+    <view class="_div data-v-3e4cd591 repayPlanPage">
+        <view class="_div data-v-3e4cd591" wx:if="{{haveData==1}}">
+            <view class="_div data-v-3e4cd591 listSite">
+                <view class="_h2 data-v-3e4cd591 RPPTitle flex">
+                    <view class="_div data-v-3e4cd591 leftLine"></view>
+                    <view class="_div data-v-3e4cd591 rightText">项目信息</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">客户姓名</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{repayData.repaymentObj.customerName}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">项目名称</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.projectName}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">是否支持银行卡代扣</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight {{[userInfor.supportBankDeduct=='YES'?'isTrue':'',userInfor.supportBankDeduct=='NO'?'isFalse':'']}}">{{userInfor.supportBankDeduct=='YES'?'是':'否'}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">是否短信通知</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight {{[userInfor.supportSMSNotify=='YES'?'isTrue':'',userInfor.supportSMSNotify=='NO'?'isFalse':'']}}">{{userInfor.supportSMSNotify=='YES'?'是':'否'}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList noLine">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">截止到本期未还金额(元)</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight moneySite">{{userInfor.totalAmountDue}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 cutOffRule">
+                    <label class="_span data-v-3e4cd591 leftCricular"></label>
+                    <label class="_span data-v-3e4cd591 rightCricular"></label>
+                </view>
+                <view class="_h2 data-v-3e4cd591 RPPTitle flex">
+                    <view class="_div data-v-3e4cd591 rightText rightTitle">本期信息</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">本期编号</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.planNo}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">本期期数</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.currentPeriod}}/{{userInfor.totalPeriod}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">还款状态</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.repaymentStaus}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">应还总额</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.amountNeedPay}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">应还本金</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.principalNeedPay}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">应还利息</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.interestNeedPay}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">应还罚息</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.penaltyNeedPay}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">应还服务费</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.serviceFeeNeedPay}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">已还总额</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.amountPaid}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">已还本金</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.principalPaid}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">已还利息</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.interestPaid}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">已还罚息</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.penaltyPaid}}</view>
+                </view>
+                <view class="_div data-v-3e4cd591 RPPList">
+                    <view class="_div data-v-3e4cd591 RPPListLeft">已还服务费</view>
+                    <view class="_div data-v-3e4cd591 RPPListRight">{{userInfor.serviceFeePaid}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="_div data-v-3e4cd591" wx:if="{{haveData==0}}">
+            <template is="index$36ab1cab" data="{{...$root[$kk+'0'],$root:$root}}"></template>
+        </view>
+    </view>
+</template>
+<import src="index$36ab1cab"></import>

@@ -1,0 +1,16 @@
+<template name="card$0a8b6143">
+    <view class="_div data-v-2780d762 card-item">
+        <view bindtap="handleProxy" class="_div data-v-2780d762 card-title-item flex align-items-center" data-comkey="{{$k}}" data-eventid="{{'0'}}" data-partnerno="{{partnerNo}}" data-userid="{{userid}}">
+            <view class="_p data-v-2780d762 card-icon" style=" {{iconInfos.style}}">{{iconInfos.text}}</view>
+            <view class="_p data-v-2780d762 title flex-item-1">{{text}}</view>
+            <view class="_p data-v-2780d762 right-icon"></view>
+        </view>
+        <view class="_div data-v-2780d762 btn-item flex">
+            <button bindtap="handleProxy" class="_button data-v-2780d762" data-comkey="{{$k}}" data-eventid="{{'1'}}" data-partnerno="{{partnerNo}}" data-type="{{1}}" data-userid="{{userid}}" hidden="{{!showExpeditedCreditQRCode}}">加急二维码</button>
+            <button bindtap="handleProxy" class="_button data-v-2780d762" data-comkey="{{$k}}" data-eventid="{{'2'}}" data-partnerno="{{partnerNo}}" data-type="{{2}}" data-userid="{{userid}}" hidden="{{!showSupCreditQRCode}}">辅助授信</button>
+            <button bindtap="handleProxy" class="_button data-v-2780d762" data-comkey="{{$k}}" data-eventid="{{'3'}}" data-partnerno="{{partnerNo}}" data-userid="{{userid}}" hidden="{{!isShowCustomerReg}}">客户登记</button>
+            <button bindtap="handleProxy" class="_button data-v-2780d762" data-comkey="{{$k}}" data-eventid="{{'4'}}" data-partnerno="{{partnerNo}}" data-type="{{0}}" data-urgent="{{false}}" data-userid="{{userid}}" hidden="{{!showNormalCreditQRCode}}">普通二维码</button>
+            <button bindtap="handleProxy" class="_button data-v-2780d762" data-comkey="{{$k}}" data-eventid="{{'5'}}" data-partnerno="{{partnerNo}}" data-type="{{3}}" data-userid="{{userid}}" hidden="{{!showPreferenceQRCode}}">活动</button>
+        </view>
+    </view>
+</template>

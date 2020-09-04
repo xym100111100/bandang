@@ -1,0 +1,101 @@
+<template name="preliminary$60758c96">
+    <view class="_div data-v-2b3b50b6 container">
+        <view class="_div data-v-2b3b50b6 headerClass">请检查您的身份证信息</view>
+        <view class="_div data-v-2b3b50b6 uploadList">
+            <view bindtap="handleProxy" class="_div data-v-2b3b50b6 uploadListItem before" data-comkey="{{$k}}" data-eventid="{{'0'}}">
+                <image class="_image data-v-2b3b50b6" src="{{frontUrlShow}}"></image>
+                <view class="_div data-v-2b3b50b6 actionBtn">
+                    <image class="_image data-v-2b3b50b6" src="/static/images/preliminary/takephoto.png"></image>
+                    <view class="_div data-v-2b3b50b6 dscInfo">点击上传正面</view>
+                </view>
+            </view>
+            <view bindtap="handleProxy" class="_div data-v-2b3b50b6 uploadListItem after" data-comkey="{{$k}}" data-eventid="{{'1'}}">
+                <image class="_image data-v-2b3b50b6" src="{{reverseUrlShow}}"></image>
+                <view class="_div data-v-2b3b50b6 actionBtn">
+                    <image class="_image data-v-2b3b50b6" src="/static/images/preliminary/takephoto.png"></image>
+                    <view class="_div data-v-2b3b50b6 dscInfo">点击上传反面</view>
+                </view>
+            </view>
+            <view class="_div data-v-2b3b50b6 line">
+                <text class="_text data-v-2b3b50b6 lineText">拍摄照片要求</text>
+            </view>
+        </view>
+        <view class="_div data-v-2b3b50b6 tipList">
+            <view class="_div data-v-2b3b50b6 tip">
+                <image class="_image data-v-2b3b50b6 picTip" src="/static/images/preliminary/ind_4.png"></image>
+                <view class="_div data-v-2b3b50b6 tipInfo">
+                    <image class="_image data-v-2b3b50b6 right" src="/static/images/preliminary/right.png"></image>
+                    <text class="_text data-v-2b3b50b6">标准拍摄</text>
+                </view>
+            </view>
+            <view class="_div data-v-2b3b50b6 tip">
+                <image class="_image data-v-2b3b50b6 picTip" src="/static/images/preliminary/ind_1.png"></image>
+                <view class="_div data-v-2b3b50b6 tipInfo">
+                    <image class="_image data-v-2b3b50b6" src="/static/images/preliminary/fail.png"></image>
+                    <text class="_text data-v-2b3b50b6">边框缺失</text>
+                </view>
+            </view>
+            <view class="_div data-v-2b3b50b6 tip">
+                <image class="_image data-v-2b3b50b6 picTip" src="/static/images/preliminary/ind_3.png"></image>
+                <view class="_div data-v-2b3b50b6 tipInfo">
+                    <image class="_image data-v-2b3b50b6" src="/static/images/preliminary/fail.png"></image>
+                    <text class="_text data-v-2b3b50b6">照片模糊</text>
+                </view>
+            </view>
+            <view class="_div data-v-2b3b50b6 tip">
+                <image class="_image data-v-2b3b50b6 picTip" src="/static/images/preliminary/ind_2.png"></image>
+                <view class="_div data-v-2b3b50b6 tipInfo">
+                    <image class="_image data-v-2b3b50b6" src="/static/images/preliminary/fail.png"></image>
+                    <text class="_text data-v-2b3b50b6">闪光强烈</text>
+                </view>
+            </view>
+        </view>
+        <view class="_div data-v-2b3b50b6 bottomBtn">
+            <button bindtap="handleProxy" class="_button data-v-2b3b50b6 publicBtn baseInfo" data-comkey="{{$k}}" data-eventid="{{'2'}}" type="default">确认</button>
+        </view>
+        <view class="_div data-v-2b3b50b6 {{[showBottomPopup?'pupopBottomShow pupopBottom':'',!showBottomPopup?'pupopBottom':'']}}">
+            <view bindtap="handleProxy" class="_div data-v-2b3b50b6 pupopBottom__mask" data-comkey="{{$k}}" data-eventid="{{'3'}}"></view>
+            <view class="_div data-v-2b3b50b6 pupopBottom__container">
+                <view class="_div data-v-2b3b50b6 pupop_b">
+                    <view class="_div data-v-2b3b50b6 pupopHeader">
+                        <text class="_text data-v-2b3b50b6">信息确认</text>
+                        <image bindtap="handleProxy" class="_image data-v-2b3b50b6" data-comkey="{{$k}}" data-eventid="{{'4'}}" src="/static/images/preliminary/close.png"></image>
+                    </view>
+                    <view class="_div data-v-2b3b50b6 pupopCellBox">
+                        <view class="_div data-v-2b3b50b6 pupopCell">
+                            <view class="_div data-v-2b3b50b6 lableName">
+                            姓名
+                        </view>
+                            <input bindinput="handleProxy" class="_input data-v-2b3b50b6 lableInfo" data-comkey="{{$k}}" data-eventid="{{'5'}}" placeholder="请输入姓名" placeholderStyle="color:#cacaca;" type="text" value="{{cardInfo.realName}}"></input>
+                        </view>
+                        <view class="_div data-v-2b3b50b6 pupopCell">
+                            <view class="_div data-v-2b3b50b6 lableName">
+                            身份证号
+                        </view>
+                            <input bindinput="handleProxy" class="_input data-v-2b3b50b6 lableInfo" data-comkey="{{$k}}" data-eventid="{{'6'}}" placeholder="请输入身份证号码" placeholderStyle="color:#cacaca;" type="text" value="{{cardInfo.idCardNumber}}"></input>
+                        </view>
+                        <view class="_div data-v-2b3b50b6 pupopCell">
+                            <view class="_div data-v-2b3b50b6 lableName">
+                            身份证有效期
+                        </view>
+                            <input bindinput="handleProxy" class="_input data-v-2b3b50b6 lableInfo" data-comkey="{{$k}}" data-eventid="{{'7'}}" placeholder="请输入身份证有效期" placeholderStyle="color:#cacaca;" type="text" value="{{cardInfo.validDate}}"></input>
+                        </view>
+                    </view>
+                </view>
+                <view class="_div data-v-2b3b50b6 idCard">
+                    <view class="_div data-v-2b3b50b6 idCardBox">
+                        <image class="_image data-v-2b3b50b6 real" src="{{frontUrlShow}}"></image>
+                        <image class="_image data-v-2b3b50b6 hodle" src="/static/images/preliminary/watermark.png"></image>
+                    </view>
+                    <view class="_div data-v-2b3b50b6 idCardBox">
+                        <image class="_image data-v-2b3b50b6 real" src="{{reverseUrlShow}}"></image>
+                        <image class="_image data-v-2b3b50b6 hodle" src="/static/images/preliminary/watermark.png"></image>
+                    </view>
+                </view>
+                <view class="_div data-v-2b3b50b6 bottomBtn">
+                    <button bindtap="handleProxy" class="_button data-v-2b3b50b6 publicBtn baseInfo" data-comkey="{{$k}}" data-eventid="{{'8'}}" type="default">我已确认信息无误</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,21 @@
+<template name="default"></template>
+<template name="index$28129b31">
+    <view class="_div data-v-471e579c dialog">
+        <view bindtap="handleProxy" class="_div data-v-471e579c dialog-cover back" data-comkey="{{$k}}" data-eventid="{{'0'}}" wx:if="{{isShow}}"></view>
+        <transition class="_transition data-v-471e579c" name="drop">
+            <view class="_div data-v-471e579c dialog-content" style=" {{'top:'+topDistance+'%'+';'+'width:'+widNum+'%'+';'+'left:'+leftSite+'%'+';'}}" wx:if="{{isShow}}">
+                <view class="_div data-v-471e579c dialog_head back " wx:if="{{isShowHeader}}">
+          {{headerTxt}}
+          </view>
+                <view class="_div data-v-471e579c dialog_main">
+                    <template is="{{$slotdefault||'default'}}" data="{{...$root[$p],...$root[$k],$root:$root}}"></template>
+                </view>
+                <view class="_div data-v-471e579c foot ">
+                    <view bindtap="handleProxy" class="_div data-v-471e579c foot_cancel" data-comkey="{{$k}}" data-eventid="{{'1'}}" wx:if="{{isShowCancel}}">{{cancelTxt}}</view>
+                    <view bindtap="handleProxy" class="_div data-v-471e579c foot_ok" data-comkey="{{$k}}" data-eventid="{{'2'}}" wx:if="{{isShowOk}}">{{okTxt}}</view>
+                </view>
+            </view>
+        </transition>
+    </view>
+</template>
+<import src="slots"></import>

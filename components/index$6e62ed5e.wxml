@@ -1,0 +1,73 @@
+<template name="index$6e62ed5e">
+    <view class="_div data-v-17fd9b92 commonPage">
+        <view class="_div data-v-17fd9b92 repayList">
+            <view class="_div data-v-17fd9b92 List repayListTitle" wx:if="{{type=='repay'}}">
+                <view class="_div data-v-17fd9b92 ListLeft">主动还款</view>
+                <view class="_div data-v-17fd9b92 ListLeft" wx:if="{{type=='BANK_QUICK_PAY'}}">代扣</view>
+                <view class="_div data-v-17fd9b92 ListRight cyanColor" wx:if="{{repayStatus=='INIT'}}">未审核</view>
+                <view class="_div data-v-17fd9b92 ListRight blueColor" wx:if="{{repayStatus=='BACKING'}}">还款中</view>
+                <view class="_div data-v-17fd9b92 ListRight cyanColor" wx:if="{{repayStatus=='BACKED'}}">还款成功</view>
+                <view class="_div data-v-17fd9b92 ListRight redColor" wx:if="{{repayStatus=='FAIL_BACKED'}}">还款失败</view>
+                <view class="_div data-v-17fd9b92 ListRight redColor" wx:if="{{repayStatus=='FAILED'}}">还款失败</view>
+                <view class="_div data-v-17fd9b92 LeftLine"></view>
+            </view>
+            <view class="_div data-v-17fd9b92 List repayListTitle" wx:if="{{type=='withhold'}}">
+                <view class="_div data-v-17fd9b92 ListLeft">代扣</view>
+                <view class="_div data-v-17fd9b92 ListRight cyanColor" wx:if="{{repayStatus=='INIT'}}">新申请</view>
+                <view class="_div data-v-17fd9b92 ListRight blueColor" wx:if="{{repayStatus=='BACKING'}}">扣款中</view>
+                <view class="_div data-v-17fd9b92 ListRight cyanColor" wx:if="{{repayStatus=='SUCCESS'}}">扣款成功</view>
+                <view class="_div data-v-17fd9b92 ListRight HuiColor" wx:if="{{repayStatus=='CANCELED'}}">已取消</view>
+                <view class="_div data-v-17fd9b92 ListRight redColor" wx:if="{{repayStatus=='FAIL_BACKED'}}">还款失败</view>
+                <view class="_div data-v-17fd9b92 ListRight redColor" wx:if="{{repayStatus=='FAILED'}}">还款失败</view>
+                <view class="_div data-v-17fd9b92 LeftLine"></view>
+            </view>
+            <view class="_div data-v-17fd9b92 List" wx:if="{{type=='withhold'}}">
+                <view class="_div data-v-17fd9b92 ListLeft">创建时间</view>
+                <view class="_div data-v-17fd9b92 ListRight">{{withholdDate}}</view>
+            </view>
+            <view class="_div data-v-17fd9b92 List" wx:if="{{repayTime}}">
+                <view class="_div data-v-17fd9b92 ListLeft">还款时间</view>
+                <view class="_div data-v-17fd9b92 ListRight">{{repayTime}}</view>
+            </view>
+            <view class="_div data-v-17fd9b92 List" wx:if="{{repayMoney}}">
+                <view class="_div data-v-17fd9b92 ListLeft">还款金额(元)</view>
+                <view class="_div data-v-17fd9b92 ListRight">{{repayMoney}}</view>
+            </view>
+            <view class="_div data-v-17fd9b92 List" wx:if="{{principal}}">
+                <view class="_div data-v-17fd9b92 ListLeft">本金(元)</view>
+                <view class="_div data-v-17fd9b92 ListRight">{{principal}}</view>
+            </view>
+            <view class="_div data-v-17fd9b92 List" wx:if="{{interest}}">
+                <view class="_div data-v-17fd9b92 ListLeft">利息(元)</view>
+                <view class="_div data-v-17fd9b92 ListRight">{{interest}}</view>
+            </view>
+            <view class="_div data-v-17fd9b92 List" wx:if="{{fine}}">
+                <view class="_div data-v-17fd9b92 ListLeft">罚息(元)</view>
+                <view class="_div data-v-17fd9b92 ListRight">{{fine}}</view>
+            </view>
+            <view class="_div data-v-17fd9b92 List" wx:if="{{serviceCharge}}">
+                <view class="_div data-v-17fd9b92 ListLeft">服务费(元)</view>
+                <view class="_div data-v-17fd9b92 ListRight">{{serviceCharge}}</view>
+            </view>
+            <view class="_div data-v-17fd9b92 List" wx:if="{{withholdMoney}}">
+                <view class="_div data-v-17fd9b92 ListLeft">扣款金额(元)</view>
+                <view class="_div data-v-17fd9b92 ListRight">{{withholdMoney}}</view>
+            </view>
+            <view class="_div data-v-17fd9b92 List" wx:if="{{actualWithholdAmount}}">
+                <view class="_div data-v-17fd9b92 ListLeft">打入还款账户(元)</view>
+                <view class="_div data-v-17fd9b92 ListRight">{{actualWithholdAmount}}</view>
+            </view>
+            <view class="_div data-v-17fd9b92 List" wx:if="{{bankName}}">
+                <view class="_div data-v-17fd9b92 ListLeft">{{bankName}}</view>
+                <view class="_div data-v-17fd9b92 ListRight">{{cardNo}}</view>
+            </view>
+            <view class="_div data-v-17fd9b92 List" wx:if="{{customerName}}">
+                <view class="_div data-v-17fd9b92 ListLeft">账户名</view>
+                <view class="_div data-v-17fd9b92 ListRight">{{customerName}}</view>
+            </view>
+            <view class="_div data-v-17fd9b92 ListText" wx:if="{{errorMsg}}">
+                <view class="_div data-v-17fd9b92 magText">{{errorMsg}}</view>
+            </view>
+        </view>
+    </view>
+</template>

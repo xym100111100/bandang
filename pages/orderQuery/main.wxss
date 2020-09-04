@@ -1,0 +1,114 @@
+.order-query-page.data-v-3b176c1f {
+    width: 100%;
+    padding-top: 120rpx;
+    padding-bottom: 50rpx;
+    background: #f3f3f3;
+}
+
+.actBtnBox.data-v-1b76ebe9 {
+    display: flex;
+}
+
+.btnStyle.data-v-1b76ebe9 {
+    width: 50%;
+    height: 30rpx;
+    text-align: center;
+    background-color: #468cee;
+    color: #fff;
+}
+
+.btnL.data-v-1b76ebe9 {
+    border-left: 2rpx solid #fff;
+}
+
+.flex-between.data-v-1b76ebe9 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderQueryBox.data-v-1b76ebe9 {
+    width: 700rpx;
+    margin: 0 auto;
+    border-radius: 4rpx;
+    overflow: hidden;
+    margin-bottom: 30rpx;
+    background: #fff;
+}
+
+.flexLayout.data-v-1b76ebe9 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1rpx dotted #f3f3f3;
+}
+
+.nameBox.data-v-1b76ebe9 {
+    background: #fff;
+    font-size: 32rpx;
+}
+
+.nameBox .idCard.data-v-1b76ebe9 {
+    color: #808695;
+    font-size: 26rpx;
+    padding-left: 20rpx;
+}
+
+.nameBox ._p.data-v-1b76ebe9,.orderQueryBox ._ul ._p.data-v-1b76ebe9 {
+    padding: 20rpx 32rpx;
+}
+
+.orderQueryBox ._ul.data-v-1b76ebe9 {
+    background: #fff;
+    font-size: 26rpx;
+}
+
+.orderQueryBox ._li .time.data-v-1b76ebe9 {
+    border-bottom: 1rpx dotted #f3f3f3;
+}
+
+.orderQueryBox ._ul ._p ._span.data-v-1b76ebe9:first-of-type {
+    color: #808695;
+}
+
+.orderQueryBox ._ul ._p ._span.data-v-1b76ebe9:nth-of-type(2) {
+    color: #468cee;
+}
+
+.rightCricular.data-v-1b76ebe9 {
+    float: right;
+    margin-right: -24rpx;
+}
+
+.leftCricular.data-v-1b76ebe9,.rightCricular.data-v-1b76ebe9 {
+    width: 48rpx;
+    height: 48rpx;
+    border-radius: 48rpx;
+    background: #f3f3f3;
+    margin-top: -24rpx;
+}
+
+.leftCricular.data-v-1b76ebe9 {
+    float: left;
+    margin-left: -24rpx;
+}
+
+.cutOffRule.data-v-1b76ebe9 {
+    margin-top: 30rpx;
+    height: 1rpx;
+    border-top: 1rpx dotted #d8e2ed;
+    position: relative;
+}
+
+.nameBox .gree-icon.data-v-1b76ebe9 {
+    background-color: #67c23a;
+    color: #fff;
+    width: 26rpx;
+    height: 26rpx;
+    padding: 3rpx;
+    font-size: 22rpx;
+    line-height: 26rpx;
+    text-align: center;
+    margin-top: 26rpx;
+    margin-right: 20rpx;
+    border-radius: 6rpx;
+}

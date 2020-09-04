@@ -1,0 +1,5 @@
+<template name="merchants$14d59281">
+    <view class="_div data-v-2735837c invitation-page">
+        <image alt bindtap="handleProxy" class="_img data-v-2735837c" data-comkey="{{$k}}" data-eventid="{{'0'}}" data-src="{{imageUrl}}" src="{{imageUrl}}"></image>
+    </view>
+</template>

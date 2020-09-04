@@ -1,0 +1,33 @@
+<template name="greenChannel$5a5bdfc4">
+    <view class="_div data-v-700fdc85 green-channel-page">
+        <view class="_div data-v-700fdc85 hospital-item">
+            <view class="_div data-v-700fdc85 hospital-title">
+                <view class="_div data-v-700fdc85 icon"></view>
+                <view class="_p data-v-700fdc85 title">合作医院</view>
+            </view>
+            <view class="_div data-v-700fdc85 hospital-name">
+                <view class="_p data-v-700fdc85">{{partnerName}}</view>
+            </view>
+        </view>
+        <view class="_div data-v-700fdc85 form-group">
+            <view class="_div data-v-700fdc85 price-input section">
+                <label class="_span data-v-700fdc85">分期金额</label>
+                <input bindblur="handleProxy" bindinput="handleProxy" class="_input data-v-700fdc85" data-comkey="{{$k}}" data-eventid="{{'0'}}" placeholder="请输入分期金额" type="digit" value="{{priceVal}}"></input>
+            </view>
+            <view class="_div data-v-700fdc85 price-input section">
+                <label class="_span data-v-700fdc85">分期期数</label>
+                <view class="_div data-v-700fdc85 picker">
+                    <picker bindchange="handleProxy" class="_picker data-v-700fdc85" data-comkey="{{$k}}" data-eventid="{{'1'}}" range="{{objectArray}}" value="{{arr_id}}">
+                        <view class="_view data-v-700fdc85 picker">
+                    {{objectArray[arr_id]}}期
+                    </view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+        <view class="_div data-v-700fdc85 footer-submit">
+            <view class="_p data-v-700fdc85">每期应还：{{totalPrice}}</view>
+            <button bindtap="handleProxy" class="_button data-v-700fdc85 submit-btn" data-comkey="{{$k}}" data-eventid="{{'2'}}" disabled="{{submitFlag}}">提交</button>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,2 @@
+<import src="../../../components/order$34930f4d"></import>
+<template is="order$34930f4d" data="{{...$root['0'],$root:$root}}"></template>

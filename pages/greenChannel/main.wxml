@@ -1,0 +1,2 @@
+<import src="../../components/greenChannel$5a5bdfc4"></import>
+<template is="greenChannel$5a5bdfc4" data="{{...$root['0'],$root:$root}}"></template>

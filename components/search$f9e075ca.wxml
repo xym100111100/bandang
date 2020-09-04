@@ -1,0 +1,8 @@
+<template name="search$f9e075ca">
+    <view class="_div data-v-38802f7a searchBox">
+        <view class="_div data-v-38802f7a searchImg">
+            <icon class="_icon data-v-38802f7a search-icon" size="17" type="search"></icon>
+        </view>
+        <input bindconfirm="handleProxy" bindinput="handleProxy" class="_input data-v-38802f7a" confirmType="search" data-comkey="{{$k}}" data-eventid="{{'0'}}" placeholder="用户姓名/手机号码" value="{{data}}"></input>
+    </view>
+</template>

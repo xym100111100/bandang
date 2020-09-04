@@ -1,0 +1,14 @@
+<template name="repayment$d3938982">
+    <view class="_div data-v-f7a82100 repayExpirePage">
+        <template is="index$695754fa" data="{{...$root[$kk+'0'],$root:$root}}"></template>
+        <view class="_div data-v-f7a82100 userLoanList" wx:if="{{haveData==1}}">
+            <template is="index$3addc238" data="{{...$root[$kk+'1-'+index],$root:$root}}" wx:for="{{initData}}" wx:for-item="card" wx:key="index+Math.random()"></template>
+        </view>
+        <view class="_div data-v-f7a82100" wx:if="{{haveData==0}}">
+            <template is="index$36ab1cab" data="{{...$root[$kk+'2'],$root:$root}}"></template>
+        </view>
+    </view>
+</template>
+<import src="index$695754fa"></import>
+<import src="index$3addc238"></import>
+<import src="index$36ab1cab"></import>

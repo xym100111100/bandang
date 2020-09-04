@@ -1,0 +1,26 @@
+
+ .search-item {
+  background-color: #fff;
+  padding: 14rpx 30rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+ .search-item ._input {
+  background-color: #f3f3f3;
+  border-radius: 10rpx;
+  height: 60rpx;
+  padding: 9rpx 9rpx 9rpx 86rpx;
+  font-size: 30rpx;
+  color: #8c8f98;
+}
+
+ .search-item .search-icon {
+  position: absolute;
+  left: 70rpx;
+  top: 35rpx;
+  z-index: 222;
+}

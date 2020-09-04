@@ -1,0 +1,239 @@
+./static/css/vendor.wxsswx-page.data-v-2b3b50b6 {
+    background-color: #fff;
+    height: 100%;
+}
+
+.container.data-v-2b3b50b6 {
+    background: #fff;
+}
+
+.headerClass.data-v-2b3b50b6 {
+    font-size: 30rpx;
+    color: #757575;
+    width: 100%;
+    text-align: center;
+    margin: 39rpx auto 30rpx;
+}
+
+.uploadList.data-v-2b3b50b6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uploadList .uploadListItem.data-v-2b3b50b6 {
+    width: 520rpx;
+    height: 328rpx;
+    margin-bottom: 30rpx;
+    position: relative;
+}
+
+.actionBtn.data-v-2b3b50b6 {
+    width: 520rpx;
+    height: 328rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dscInfo.data-v-2b3b50b6 {
+    font-size: 26rpx;
+    margin-top: 20rpx;
+}
+
+.after .actionBtn image.data-v-2b3b50b6,.before .actionBtn image.data-v-2b3b50b6 {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.after image.data-v-2b3b50b6,.before image.data-v-2b3b50b6 {
+    width: 520rpx;
+    height: 328rpx;
+}
+
+.line.data-v-2b3b50b6 {
+    width: 690rpx;
+    margin: 0 30rpx;
+    height: 20rpx;
+    border-bottom: 1rpx solid #ddd;
+}
+
+.lineText.data-v-2b3b50b6 {
+    width: 190rpx;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28rpx;
+    color: #757575;
+    background-color: #fff;
+    position: relative;
+    top: 2rpx;
+}
+
+.tipList.data-v-2b3b50b6 {
+    margin-top: 51rpx;
+    text-align: center;
+}
+
+.tip.data-v-2b3b50b6 {
+    display: inline-block;
+    margin: 0 17rpx;
+}
+
+.tip .picTip.data-v-2b3b50b6 {
+    width: 147rpx;
+    height: 105rpx;
+}
+
+.tipInfo.data-v-2b3b50b6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right.data-v-2b3b50b6 {
+    width: 23rpx;
+    height: 17.2rpx;
+}
+
+.tipInfo image.data-v-2b3b50b6 {
+    width: 23rpx;
+    height: 23rpx;
+}
+
+.tipInfo text.data-v-2b3b50b6 {
+    font-size: 24rpx;
+    color: #757575;
+    margin-left: 10rpx;
+}
+
+.bottomBtn.data-v-2b3b50b6 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20rpx 0;
+    background-color: #fff;
+}
+
+.pupopBottom.data-v-2b3b50b6 {
+    right: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.pupopBottomShow.data-v-2b3b50b6 {
+    visibility: visible;
+}
+
+.pupopBottom__mask.data-v-2b3b50b6 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: rgba(0,0,0,.7);
+    transition: all .4s ease;
+    opacity: 0;
+}
+
+.pupopBottom__container.data-v-2b3b50b6 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    transform: translate3d(-50%,-50%,0);
+    transform-origin: center;
+    transition: all .4s ease;
+    z-index: 11;
+    opacity: 0;
+}
+
+.pupopBottomShow .pupopBottom__container.data-v-2b3b50b6 {
+    opacity: 1;
+}
+
+.pupopBottomShow .pupopBottom__mask.data-v-2b3b50b6 {
+    display: block;
+    opacity: 1;
+    z-index: 10;
+}
+
+.pupopBottom .pupopBottom__container.data-v-2b3b50b6 {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    transform: translate3d(0,100%,0);
+}
+
+.pupopBottomShow.pupopBottom .pupopBottom__container.data-v-2b3b50b6 {
+    transform: translateZ(0);
+}
+
+.pupop_b .pupopHeader.data-v-2b3b50b6 {
+    width: 750rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 101rpx;
+    background-color: #fff;
+    font-size: 36rpx;
+    position: relative;
+    border-bottom: 1rpx solid #ddd;
+}
+
+.pupop_b .pupopHeader image.data-v-2b3b50b6 {
+    position: absolute;
+    right: 30rpx;
+    top: 50%;
+    margin-top: -24rpx;
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.pupopCellBox.data-v-2b3b50b6 {
+    padding: 0 30rpx;
+}
+
+.pupopCellBox .pupopCell.data-v-2b3b50b6 {
+    padding: 42rpx 0;
+    border-bottom: 1rpx solid #ddd;
+    display: flex;
+    font-size: 30rpx;
+    color: #212121;
+}
+
+.lableName.data-v-2b3b50b6 {
+    flex-shrink: 0;
+}
+
+.lableInfo.data-v-2b3b50b6 {
+    flex-shrink: 1;
+    text-align: right;
+    width: 100%;
+}
+
+.idCard.data-v-2b3b50b6 {
+    margin-top: 30rpx;
+    padding: 30rpx;
+    margin-bottom: 138rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.idCard .idCardBox.data-v-2b3b50b6,.idCardBox .hodle.data-v-2b3b50b6,.idCardBox .real.data-v-2b3b50b6 {
+    width: 309rpx;
+    height: 195rpx;
+    position: relative;
+}
+
+.idCardBox .hodle.data-v-2b3b50b6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,12 @@
+<template name="orderQuery$f28d99c4">
+    <view class="_div data-v-3b176c1f order-query-page">
+        <template is="index$695754fa" data="{{...$root[$kk+'0'],$root:$root}}"></template>
+        <view class="_div data-v-3b176c1f">
+            <template is="index$7ffe5630" data="{{...$root[$kk+'1-'+index],$root:$root}}" wx:for="{{listData}}" wx:key="item.customerName"></template>
+        </view>
+        <template is="index$36ab1cab" data="{{...$root[$kk+'2'],$root:$root}}" wx:if="{{listNone}}"></template>
+    </view>
+</template>
+<import src="index$695754fa"></import>
+<import src="index$7ffe5630"></import>
+<import src="index$36ab1cab"></import>

@@ -1,0 +1,56 @@
+<template name="merchants$027de882">
+    <view class="_div data-v-5a3722c0 merchants-details-page">
+        <view class="_div data-v-5a3722c0 cell-list">
+            <view class="_div data-v-5a3722c0 cell-item flex">
+                <view class="_p data-v-5a3722c0 cell-title">公司名称</view>
+                <view class="_p data-v-5a3722c0">{{detailsData.partnerName}}</view>
+            </view>
+            <view class="_div data-v-5a3722c0 cell-item flex">
+                <view class="_p data-v-5a3722c0 cell-title">公司联系人</view>
+                <view class="_p data-v-5a3722c0">{{detailsData.linkedName}}</view>
+            </view>
+            <view class="_div data-v-5a3722c0 cell-item flex">
+                <view class="_p data-v-5a3722c0 cell-title">联系人手机号</view>
+                <view class="_p data-v-5a3722c0">{{detailsData.linkedMobile}}</view>
+            </view>
+            <view class="_div data-v-5a3722c0 cell-item flex">
+                <view class="_p data-v-5a3722c0 cell-title">公司所在地</view>
+                <view class="_p data-v-5a3722c0">{{detailsData.area}}</view>
+            </view>
+            <view class="_div data-v-5a3722c0 cell-item flex">
+                <view class="_p data-v-5a3722c0 cell-title">详细地址</view>
+                <view class="_p data-v-5a3722c0">{{detailsData.address}}</view>
+            </view>
+            <view class="_div data-v-5a3722c0 cell-item flex">
+                <view class="_p data-v-5a3722c0 cell-title">对应BD</view>
+                <view class="_p data-v-5a3722c0">{{detailsData.bdName}}</view>
+            </view>
+        </view>
+        <view class="_div data-v-5a3722c0 merchants-activities" wx:if="{{preferenceList&&preferenceList.length}}">
+            <view class="_div data-v-5a3722c0 model-title">商户活动</view>
+            <view class="_div data-v-5a3722c0 activity-item" key="{{index}}" wx:for="{{preferenceList}}" wx:key="index">
+                <view class="_div data-v-5a3722c0 {{['activity-status',item.preferenceStatusCode==='PROCESSING'?'active':'expired']}}">{{item.preferenceStatusDesc}}</view>
+                <view class="_div data-v-5a3722c0 activity-name">{{item.preferenceName}}</view>
+                <view class="_div data-v-5a3722c0 activity-content">
+                    <view class="_div data-v-5a3722c0 item-row">
+                        <view class="_div data-v-5a3722c0 item-label">适用项目</view>
+                        <view class="_div data-v-5a3722c0 item-content">{{item.itemNames}}</view>
+                    </view>
+                    <view class="_div data-v-5a3722c0 item-row">
+                        <view class="_div data-v-5a3722c0 item-label">优惠规则</view>
+                        <view class="_div data-v-5a3722c0 item-content">{{item.preferenceDetails}}</view>
+                    </view>
+                    <view class="_div data-v-5a3722c0 item-row">
+                        <view class="_div data-v-5a3722c0 item-label">有效期限</view>
+                        <view class="_div data-v-5a3722c0 item-content">{{item.effectiveTime}}</view>
+                    </view>
+                </view>
+                <view class="_div data-v-5a3722c0 activity-note" wx:if="{{item.specialPreference}}">
+                    <image alt class="_img data-v-5a3722c0" src="{{noteBg}}"></image>
+                    <label class="_span data-v-5a3722c0">特殊权限活动</label>
+                </view>
+                <image alt class="_img data-v-5a3722c0 activity-bg" src="{{item.preferenceStatusCode==='PROCESSING'?activedBg:expiredBg}}"></image>
+            </view>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,88 @@
+<template name="repayment$d504ddee">
+    <view class="_div data-v-a4bc7cb0 BWPage">
+        <view class="_div data-v-a4bc7cb0 BWPageTitle">
+        如需提前还款、减免罚息，请先与总部还款管理岗联系：
+        <label bindtap="handleProxy" class="_span data-v-a4bc7cb0" data-comkey="{{$k}}" data-eventid="{{'0'}}">18969908554</label> ，查账请联系结算
+        <label bindtap="handleProxy" class="_span data-v-a4bc7cb0" data-comkey="{{$k}}" data-eventid="{{'1'}}">17757170720</label>
+        </view>
+        <view class="_div data-v-a4bc7cb0 BWPageLists">
+            <view class="_div data-v-a4bc7cb0 BWPageList">{{repayData.repaymentObj.customerName}} {{repayData.repaymentObj.currentPeriod}}/{{repayData.repaymentObj.totalPeriod}}期</view>
+            <picker bindchange="handleProxy" class="_picker data-v-a4bc7cb0 BWPageList" data-comkey="{{$k}}" data-eventid="{{'2'}}" range="{{repaySourseList}}" rangeKey="name" value="{{settleIndex}}">
+                <view class="_div data-v-a4bc7cb0 BWPageListLeft">还款类型</view>
+                <view class="_div data-v-a4bc7cb0 BWPageListRight">
+                    <label class="_span data-v-a4bc7cb0">{{repaySourseList[settleIndex].name||''}}</label>
+                    <image class="_image data-v-a4bc7cb0 rightIcom" src="{{nextImgSrc}}"></image>
+                </view>
+            </picker>
+            <picker bindchange="handleProxy" class="_picker data-v-a4bc7cb0 BWPageList" data-comkey="{{$k}}" data-eventid="{{'3'}}" range="{{paymentType}}" value="{{paymentIndex}}">
+                <view class="_div data-v-a4bc7cb0 BWPageListLeft">资金类型</view>
+                <view class="_div data-v-a4bc7cb0 BWPageListRight">
+                    <label class="_span data-v-a4bc7cb0">{{paymentType[paymentIndex]}}</label>
+                    <image class="_image data-v-a4bc7cb0 rightIcom" src="{{nextImgSrc}}"></image>
+                </view>
+            </picker>
+            <view bindtap="handleProxy" class="_div data-v-a4bc7cb0 BWPageList receivablesList" data-comkey="{{$k}}" data-eventid="{{'4'}}">
+                <view class="_div data-v-a4bc7cb0 BWPageListLeft receivables">收款人</view>
+                <view class="_div data-v-a4bc7cb0 BWPageListRight receivablesInfor">
+                    <view class="_div data-v-a4bc7cb0 receivablesInforDetails">
+                    {{repayData.defalutAccountData.ownerName}}
+                    <view class="_br data-v-a4bc7cb0"></view> {{repayData.defalutAccountData.bankNameShow}} {{repayData.defalutAccountData.bankAccount}}
+                </view>
+                    <image class="_image data-v-a4bc7cb0 rightIcom receivablesIcon" src="{{nextImgSrc}}" wx:if="{{repaySourseList[settleIndex].name!=='银行卡代扣'}}"></image>
+                </view>
+            </view>
+            <view bindtap="handleProxy" class="_div data-v-a4bc7cb0 BWPageList receivablesList" data-comkey="{{$k}}" data-eventid="{{'5'}}">
+                <view class="_div data-v-a4bc7cb0 BWPageListLeft receivables">付款人</view>
+                <view class="_div data-v-a4bc7cb0 BWPageListRight receivablesInfor">
+                    <view class="_div data-v-a4bc7cb0 receivablesInforDetails">
+                    {{repayData.accountData.ownerName}}
+                    <view class="_br data-v-a4bc7cb0"></view> {{repayData.accountData.bankNameShow}} {{repayData.accountData.bankAccount}}
+                </view>
+                    <image class="_image data-v-a4bc7cb0 rightIcom receivablesIcon" src="{{nextImgSrc}}" wx:if="{{repaySourseList[settleIndex].name!=='银行卡代扣'}}"></image>
+                </view>
+            </view>
+            <view class="_div data-v-a4bc7cb0 BWPageMoneyTige">
+            需还金额:
+            <label class="_span data-v-a4bc7cb0">{{repayPlan.amountNeedPay}}元</label>
+            (需还金额 = 应还 - 已还 - 扣款中 - 审核中 - 项目余额)
+        </view>
+            <view class="_div data-v-a4bc7cb0 BWPageList">
+                <view class="_div data-v-a4bc7cb0 BWPageListLeft">扣款金额(元)</view>
+                <view class="_div data-v-a4bc7cb0 BWPageListRight clearInput">
+                    <input bindinput="handleProxy" class="_input data-v-a4bc7cb0 ListRightInput" data-comkey="{{$k}}" data-eventid="{{'6'}}" placeholder="请输入大于0的数字金额" type="digit" value="{{withholdMoney}}"></input>
+                    <view bindtap="handleProxy" class="_div data-v-a4bc7cb0 clearBox" data-comkey="{{$k}}" data-eventid="{{'7'}}" wx:if="{{withholdMoney!=''}}">
+                        <image alt class="_img data-v-a4bc7cb0" src="/static/images/clear.png"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="_div data-v-a4bc7cb0 BWPageList">
+                <view class="_div data-v-a4bc7cb0 BWPageListLeft">部分金额另有他用(元)</view>
+                <view class="_div data-v-a4bc7cb0 BWPageListRight clearInput">
+                    <input bindinput="handleProxy" class="_input data-v-a4bc7cb0 ListRightInput" data-comkey="{{$k}}" data-eventid="{{'8'}}" placeholder="请输入另有他用金额" type="digit" value="{{otherMoney}}"></input>
+                    <view bindtap="handleProxy" class="_div data-v-a4bc7cb0 clearBox" data-comkey="{{$k}}" data-eventid="{{'9'}}" wx:if="{{otherMoney!=''}}">
+                        <image alt class="_img data-v-a4bc7cb0" src="/static/images/clear.png"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="_div data-v-a4bc7cb0 uploanSite">
+            <view class="_h2 data-v-a4bc7cb0 uploanSiteTitle">上传凭证</view>
+            <view class="_div data-v-a4bc7cb0 imgShowList">
+                <view class="_div data-v-a4bc7cb0 imgSite" key="{{index}}" wx:for="{{uploadImgList}}" wx:key="index">
+                    <icon bindtap="handleProxy" class="_icon data-v-a4bc7cb0 imgSiteDeleteIcon" data-comkey="{{$k}}" data-eventid="{{'10-'+index}}" type="clear"></icon>
+                    <image class="_image data-v-a4bc7cb0 img" src="{{item}}"></image>
+                </view>
+                <view bindtap="handleProxy" class="_div data-v-a4bc7cb0 imgSite uploanImgText" data-comkey="{{$k}}" data-eventid="{{'11'}}" wx:if="{{uploadImgList.length<9}}">
+                    <image alt class="_img data-v-a4bc7cb0" src="/static/images/uploadImg.png"></image>
+                </view>
+            </view>
+        </view>
+        <view class="_div data-v-a4bc7cb0 remarksSite">
+            <view class="_h2 data-v-a4bc7cb0 remarksSiteTitle">备注</view>
+            <view class="_div data-v-a4bc7cb0 remarkTextInput {{[paddingBottom?'paddingBottom':'']}}">
+                <textarea bindinput="handleProxy" class="_textarea data-v-a4bc7cb0 remarksTextarea" cursorSpacing="280" data-comkey="{{$k}}" data-eventid="{{'12'}}" placeholder="捎句话给结算吧" value="{{remarkText}}"></textarea>
+            </view>
+        </view>
+        <button bindtap="handleProxy" class="_button data-v-a4bc7cb0 tureFootBtn" data-comkey="{{$k}}" data-eventid="{{'13'}}">确定</button>
+    </view>
+</template>

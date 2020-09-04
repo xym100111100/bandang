@@ -1,0 +1,25 @@
+<template name="preliminary$356d51cc">
+    <view class="_div data-v-2ca2ff1b container">
+        <view class="_ul data-v-2ca2ff1b listBox">
+            <view class="_li data-v-2ca2ff1b">
+                <view class="_p data-v-2ca2ff1b title">姓名:</view>
+                <view class="_p data-v-2ca2ff1b infoValue">{{cardInfo.realName}}</view>
+            </view>
+            <view class="_li data-v-2ca2ff1b">
+                <view class="_p data-v-2ca2ff1b title">身份证号:</view>
+                <view class="_p data-v-2ca2ff1b infoValue">{{cardInfo.idCardNumber}}</view>
+            </view>
+            <view class="_li data-v-2ca2ff1b">
+                <view class="_p data-v-2ca2ff1b title">手机号:</view>
+                <view class="_p data-v-2ca2ff1b infoValue">{{cardInfo.mobile}}</view>
+            </view>
+            <view class="_li data-v-2ca2ff1b">
+                <view class="_p data-v-2ca2ff1b title">是否加急:</view>
+                <view class="_p data-v-2ca2ff1b switchLab">
+                    <switch bindchange="handleProxy" class="_switch data-v-2ca2ff1b" data-comkey="{{$k}}" data-eventid="{{'0'}}"></switch>
+                </view>
+            </view>
+        </view>
+        <button bindtap="handleProxy" class="_button data-v-2ca2ff1b publicBtn baseInfo" data-comkey="{{$k}}" data-eventid="{{'1'}}" type="default">确认</button>
+    </view>
+</template>

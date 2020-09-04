@@ -1,0 +1,50 @@
+./static/css/vendor.wxssbody {
+    background: #f3f3f3;
+}
+
+.userLoanList {
+    width: 100%;
+    padding-bottom: 80rpx;
+}
+
+.searchInput {
+    width: 500rpx;
+    float: left;
+    height: 42rpx;
+    margin-top: 9rpx;
+    line-height: 42rpx;
+    font-size: 30rpx;
+}
+
+.titleFindIcon {
+    height: 60rpx;
+    display: block;
+    margin-left: 30rpx;
+    background: #f3f3f3;
+    padding-left: 40rpx;
+    width: 550rpx;
+    float: left;
+}
+
+.searchIcon {
+    padding-top: 15rpx;
+    margin-right: 16rpx;
+    float: left;
+    font-size: 30rpx;
+}
+
+.titleFindSite {
+    height: 74rpx;
+    background: #fff;
+    padding-top: 28rpx;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.repayExpirePage {
+    width: 100%;
+    background: #f3f3f3;
+    padding-top: 118rpx;
+}

@@ -1,0 +1,23 @@
+<template name="login$5cba273b">
+    <view class="_div data-v-122a919a login-page">
+        <view class="_div data-v-122a919a logo-item">
+            <view class="_div data-v-122a919a logo-img"></view>
+            <view class="_p data-v-122a919a">移动办单工具</view>
+        </view>
+        <view class="_div data-v-122a919a section">
+            <view class="_div data-v-122a919a input-group">
+                <input bindinput="handleProxy" class="_input data-v-122a919a" data-comkey="{{$k}}" data-eventid="{{'0'}}" maxlength="11" placeholder="请输入手机号" type="tel" value="{{userName}}"></input>
+            </view>
+            <view class="_div data-v-122a919a input-group">
+                <input bindinput="handleProxy" class="_input data-v-122a919a smsCode" data-comkey="{{$k}}" data-eventid="{{'1'}}" placeholder="请输入验证码" type="text" value="{{verifyCode}}"></input>
+                <button bindtap="handleProxy" class="_button data-v-122a919a code-btn" data-comkey="{{$k}}" data-eventid="{{'2'}}" disabled="{{countdownFlag}}">{{countdownVal}}</button>
+            </view>
+            <view class="_div data-v-122a919a btn-area">
+                <button bindtap="handleProxy" class="_button data-v-122a919a" data-comkey="{{$k}}" data-eventid="{{'3'}}" disabled="{{disabled}}" size="primarySize" type="primary">登录</button>
+            </view>
+            <view class="_p data-v-122a919a versionOn">当前版本:{{miniVer}}</view>
+            <template is="index$1181186f" data="{{...$root[$kk+'0'],$root:$root}}" wx:if="{{env}}"></template>
+        </view>
+    </view>
+</template>
+<import src="index$1181186f"></import>

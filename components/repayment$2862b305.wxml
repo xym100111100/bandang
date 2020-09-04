@@ -1,0 +1,41 @@
+<template name="repayment$2862b305">
+    <view class="_div data-v-76961ab8 count">
+        <view class="_p data-v-76961ab8 topTip">如有罚息仅计算至当日，请注意提醒用户实际还款罚息以系统提示为准，提前结清违约金根据实际每日还款本金占用情况，实际还款时会有部分不一致</view>
+        <picker bindchange="handleProxy" class="_picker data-v-76961ab8 List" data-comkey="{{$k}}" data-eventid="{{'0'}}" mode="date" value="repayDate">
+            <view class="_div data-v-76961ab8 ListLeft">还款日期</view>
+            <view class="_div data-v-76961ab8 ListRight">
+                <label class="_span data-v-76961ab8">{{repayDate}}</label>
+            </view>
+        </picker>
+        <view bindtap="handleProxy" class="_div data-v-76961ab8 countBtn" data-comkey="{{$k}}" data-eventid="{{'1'}}">计算</view>
+        <view class="_div data-v-76961ab8 infoBox" wx:if="{{earlyCalc!=''}}">
+            <view class="_h2 data-v-76961ab8">还款总金额: {{earlyCalc.repayTotalAmt/100||'--'}}</view>
+            <view class="_ul data-v-76961ab8">
+                <view class="_li data-v-76961ab8 flexLayout">
+                    <view class="_p data-v-76961ab8">应还本金</view>
+                    <view class="_p data-v-76961ab8">{{earlyCalc.repayPeriodAmt/100||'--'}}</view>
+                </view>
+                <view class="_li data-v-76961ab8 flexLayout">
+                    <view class="_p data-v-76961ab8">应还利息</view>
+                    <view class="_p data-v-76961ab8">{{earlyCalc.repayInterestAmt/100||'--'}}</view>
+                </view>
+                <view class="_li data-v-76961ab8 flexLayout">
+                    <view class="_p data-v-76961ab8">应还服务费</view>
+                    <view class="_p data-v-76961ab8">{{earlyCalc.repayServiceFeeAmt/100||'--'}}</view>
+                </view>
+                <view class="_li data-v-76961ab8 flexLayout">
+                    <view class="_p data-v-76961ab8">应还违约金</view>
+                    <view class="_p data-v-76961ab8">{{earlyCalc.liquidatedAmt/100||'--'}}</view>
+                </view>
+                <view class="_li data-v-76961ab8 flexLayout">
+                    <view class="_p data-v-76961ab8">应还罚息</view>
+                    <view class="_p data-v-76961ab8">{{earlyCalc.overdueAmt/100||'--'}}</view>
+                </view>
+                <view class="_li data-v-76961ab8 flexLayout">
+                    <view class="_p data-v-76961ab8">项目标余额</view>
+                    <view class="_p data-v-76961ab8">{{earlyCalc.tenderAccountAmt/100||'--'}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,23 @@
+<template name="claim$6273344e">
+    <view class="_div data-v-17e39ead add-user">
+        <template is="index$695754fa" data="{{...$root[$kk+'0'],$root:$root}}"></template>
+        <view class="_ul data-v-17e39ead" wx:if="{{hasData==1}}">
+            <view class="_li data-v-17e39ead" key="{{item.name}}" wx:for="{{orderDetail}}" wx:key="item.name">
+                <label class="_span data-v-17e39ead name">{{item.name}}</label>
+                <label class="_span data-v-17e39ead">{{item.value}}</label>
+            </view>
+            <view class="_li data-v-17e39ead action-btn">
+                <view class="_div data-v-17e39ead tip">
+                    <image class="_img data-v-17e39ead" src="/static/images/icon-error.png" wx:if="{{nonClaimMsg}}"></image>
+                    <label class="_span data-v-17e39ead">{{nonClaimMsg}}</label>
+                </view>
+                <button bindtap="handleProxy" class="_button data-v-17e39ead" data-comkey="{{$k}}" data-eventid="{{'1'}}" disabled="{{canClaim==2}}">认领</button>
+            </view>
+        </view>
+        <template is="index$28129b31" data="{{...$root[$kk+'1'],$root:$root,$for:{default:'data-v-17e39ead-default-1'},$slotdefault:'data-v-17e39ead-default-1'}}"></template>
+        <template is="index$36ab1cab" data="{{...$root[$kk+'2'],$root:$root}}" wx:if="{{listNone}}"></template>
+    </view>
+</template>
+<import src="index$695754fa"></import>
+<import src="index$28129b31"></import>
+<import src="index$36ab1cab"></import>

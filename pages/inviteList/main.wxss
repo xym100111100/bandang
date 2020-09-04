@@ -1,0 +1,72 @@
+./static/css/vendor.wxss.inviteList-user.data-v-20953d0c {
+    width: 100%;
+    padding-top: 108rpx;
+    padding-bottom: 50rpx;
+    background: #f3f3f3;
+}
+
+.list.data-v-20953d0c {
+    width: 690rpx;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8rpx;
+    padding: 50rpx 40rpx 30rpx;
+    box-sizing: border-box;
+    margin-bottom: 30rpx;
+}
+
+.list ._li.data-v-20953d0c {
+    font-size: 28rpx;
+    color: #313131;
+    padding: 30rpx 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid #f2f2f2;
+}
+
+.list ._li .name.data-v-20953d0c {
+    flex-shrink: 0;
+    margin-right: 20rpx;
+}
+
+.list ._li.action-btn.data-v-20953d0c {
+    border: none;
+    padding-top: 30rpx;
+    height: auto;
+}
+
+.list ._li.action-btn .tip.data-v-20953d0c {
+    font-size: 26rpx;
+    color: #757575;
+    display: flex;
+    align-items: center;
+}
+
+.list ._li.action-btn ._img.data-v-20953d0c {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+    flex-shrink: 0;
+}
+
+._button.data-v-20953d0c {
+    width: 160rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    background: #3e97f3;
+    border-radius: 4rpx;
+    font-size: 28rpx;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+._button.data-v-20953d0c:after {
+    border: none;
+}
+
+._button[disabled].data-v-20953d0c {
+    background: #c5e0fc;
+    color: #fff;
+    border: none;
+}

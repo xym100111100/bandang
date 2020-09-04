@@ -1,0 +1,21 @@
+<template name="inviteList$6c37040b">
+    <view class="_div data-v-20953d0c inviteList-user">
+        <template is="index$695754fa" data="{{...$root[$kk+'0'],$root:$root}}"></template>
+        <view class="_ul data-v-20953d0c list" key="{{item.debtNo}}" wx:for="{{listData}}" wx:for-index="idx1" wx:key="item.debtNo">
+            <view class="_li data-v-20953d0c" key="{{card.value}}" wx:for="{{item.list}}" wx:for-index="idx2" wx:for-item="card" wx:key="card.value">
+                <label class="_span data-v-20953d0c name">{{card.name}}</label>
+                <label class="_span data-v-20953d0c">{{card.value}}</label>
+            </view>
+            <view class="_li data-v-20953d0c action-btn">
+                <view class="_div data-v-20953d0c tip">
+                    <image class="_img data-v-20953d0c" src="/static/images/icon-error.png" wx:if="{{item.nonInviteMsg}}"></image>
+                    <label class="_span data-v-20953d0c">{{item.nonInviteMsg}}</label>
+                </view>
+                <button bindtap="handleProxy" class="_button data-v-20953d0c" data-comkey="{{$k}}" data-eventid="{{'1-'+idx1}}" disabled="{{item.canInvite==2}}" wx:if="{{inviteType!=5}}">去邀请</button>
+            </view>
+        </view>
+        <template is="index$36ab1cab" data="{{...$root[$kk+'1'],$root:$root}}" wx:if="{{listNone}}"></template>
+    </view>
+</template>
+<import src="index$695754fa"></import>
+<import src="index$36ab1cab"></import>

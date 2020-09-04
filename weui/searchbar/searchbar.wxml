@@ -1,0 +1,5 @@
+<view class="search-item">
+  <icon class="search-icon" size="17" type="search"></icon>
+  <input bindconfirm="handleProxy" bindinput="handleProxy" class="_input" confirmType="search"
+    data-comkey="{{$k}}" data-eventid="{{'0'}}" placeholder="姓名/手机号" type="text" value="{{keywords}}"></input>
+</view>

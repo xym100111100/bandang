@@ -1,0 +1,74 @@
+./static/css/vendor.wxss.telIstBox.data-v-86fd53a2 {
+    text-align: center;
+}
+
+.personalTel.data-v-86fd53a2 {
+    padding: 0 32rpx;
+}
+
+.personalTel .telView.data-v-86fd53a2 {
+    font-size: 30rpx;
+    color: #495060;
+}
+
+.personalTel .eidtBtn.data-v-86fd53a2 {
+    margin-left: 10rpx;
+    font-size: 30rpx;
+    color: #468cee;
+}
+
+.personalInfo.data-v-86fd53a2 {
+    padding-bottom: 100rpx;
+    overflow: hidden;
+    background: #fff;
+}
+
+.personalInfo .baseInfo.data-v-86fd53a2,.personalInfo .warnLinkman.data-v-86fd53a2 {
+    margin: 0 32rpx;
+}
+
+.personalInfo .baseInfo.data-v-86fd53a2 {
+    border-top: 1rpx solid #f2f2f2;
+}
+
+.cellLayout.data-v-86fd53a2 {
+    padding: 30rpx 32rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30rpx;
+    border-bottom: 1rpx solid #f2f2f2;
+}
+
+.cellLayout .title.indexName.data-v-86fd53a2 {
+    color: #468cee;
+}
+
+.cellLayout .title.data-v-86fd53a2 {
+    flex-shrink: 0;
+    color: #1c2438;
+}
+
+.cellLayout .info.data-v-86fd53a2 {
+    flex-shrink: 1;
+    text-align: right;
+    color: #495060;
+    box-sizing: border-box;
+    padding-left: 25rpx;
+}
+
+.personalInfo .warnLinkman.data-v-86fd53a2 {
+    font-size: 30rpx;
+}
+
+.warnLinkman ._li.data-v-86fd53a2 {
+    margin-bottom: 20rpx;
+}
+
+.personalInfo ._h2.data-v-86fd53a2 {
+    border-left: 5rpx solid #468cee;
+    text-indent: 20rpx;
+    color: #1c2438;
+    margin: 20rpx 32rpx;
+    font-size: 30rpx;
+}

@@ -1,0 +1,90 @@
+./static/css/vendor.wxsswx-page.data-v-066e9cce {
+    background-color: #fff;
+    height: 100%;
+}
+
+.container.data-v-066e9cce {
+    background: #f3f3f3;
+}
+
+.topTip.data-v-066e9cce {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 26rpx;
+    color: #349ff6;
+    padding: 17rpx 60rpx;
+    background: #eaf2ff;
+}
+
+.topTip image.data-v-066e9cce {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+}
+
+.itemBox.data-v-066e9cce {
+    padding: 0 60rpx;
+    background: #fff;
+}
+
+.publicItem.data-v-066e9cce {
+    padding: 63rpx 0 31rpx;
+}
+
+.phone.publicItem.data-v-066e9cce {
+    border-bottom: 1rpx solid #ddd;
+}
+
+.phone image.data-v-066e9cce {
+    width: 34rpx;
+    height: 40rpx;
+    flex-shrink: 0;
+}
+
+.password image.data-v-066e9cce {
+    width: 40rpx;
+    height: 40rpx;
+    flex-shrink: 0;
+}
+
+.inputTitle.data-v-066e9cce {
+    font-size: 30rpx;
+    color: #212121;
+    margin-bottom: 24rpx;
+}
+
+.inputBox.data-v-066e9cce {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.inputBox ._input.data-v-066e9cce {
+    width: 100%;
+    margin-left: 23rpx;
+    margin-right: 23rpx;
+    font-size: 30rpx;
+    color: #212121;
+    flex-shrink: 1;
+}
+
+.sendCode.data-v-066e9cce {
+    font-size: 30rpx;
+    color: #349ff6;
+    flex-shrink: 0;
+}
+
+.sendCodeDis.data-v-066e9cce {
+    font-size: 30rpx;
+    color: #ccc;
+    flex-shrink: 0;
+}
+
+.sendCode.data-v-066e9cce:active {
+    opacity: .3;
+}
+
+.baseInfo.data-v-066e9cce {
+    margin-top: 50rpx;
+}

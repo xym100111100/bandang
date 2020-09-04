@@ -1,0 +1,67 @@
+<template name="index$3addc238">
+    <view class="_div data-v-fb28b87a LoanInforListPage">
+        <view class="_div data-v-fb28b87a listsSite">
+            <view class="_div data-v-fb28b87a List" hidden="{{!tenderName}}">
+                <view class="_div data-v-fb28b87a ListLeft projectName">{{tenderName}}</view>
+                <view class="_div data-v-fb28b87a ListRight">{{customerName}}</view>
+            </view>
+            <view class="_div data-v-fb28b87a List" hidden="{{!status}}">
+                <view class="_div data-v-fb28b87a ListLeft">还款状态</view>
+                <view class="_div data-v-fb28b87a ListRight">{{status}}</view>
+            </view>
+            <view class="_div data-v-fb28b87a List" hidden="{{!repayTime}}">
+                <view class="_div data-v-fb28b87a ListLeft">应还日期</view>
+                <view class="_div data-v-fb28b87a ListRight">{{repayTime}}</view>
+            </view>
+            <view class="_div data-v-fb28b87a List" hidden="{{!currentPeriod}}">
+                <view class="_div data-v-fb28b87a ListLeft">本期期数</view>
+                <view class="_div data-v-fb28b87a ListRight">{{currentPeriod}}/{{totalPeriod}}</view>
+            </view>
+            <view class="_div data-v-fb28b87a List" hidden="{{!fundChannel}}">
+                <view class="_div data-v-fb28b87a ListLeft">资金来源</view>
+                <view class="_div data-v-fb28b87a ListRight">{{fundChannel}}</view>
+            </view>
+            <view class="_div data-v-fb28b87a List" hidden="{{!repayWay}}">
+                <view class="_div data-v-fb28b87a ListLeft">还款方式</view>
+                <view class="_div data-v-fb28b87a ListRight">{{repayWay}}</view>
+            </view>
+            <view class="_div data-v-fb28b87a List" hidden="{{!repayMonry}}">
+                <view class="_div data-v-fb28b87a ListLeft">应还金额(元)</view>
+                <view class="_div data-v-fb28b87a ListRight">{{repayMonry}} 
+                <label class="_span data-v-fb28b87a listRightStatus" wx:if="{{status=='已还'}}">(已还)</label>
+                    <label class="_span data-v-fb28b87a changeColor" wx:if="{{status=='未还'}}">(未还)</label>
+                </view>
+            </view>
+            <view class="_div data-v-fb28b87a List" hidden="{{!totalAmount}}">
+                <view class="_div data-v-fb28b87a ListLeft">账单金额(元)</view>
+                <view class="_div data-v-fb28b87a ListRight">{{totalAmount}}</view>
+            </view>
+            <view class="_div data-v-fb28b87a List" hidden="{{!tenderBalanceBuckledPay}}">
+                <view class="_div data-v-fb28b87a ListLeft">项目余额待扣(元)</view>
+                <view class="_div data-v-fb28b87a ListRight">
+                {{tenderBalanceBuckledPay}} 
+            </view>
+            </view>
+            <view class="_div data-v-fb28b87a List" hidden="{{!amountBackedPay}}">
+                <view class="_div data-v-fb28b87a ListLeft">已还金额(元)</view>
+                <view class="_div data-v-fb28b87a ListRight">
+                {{amountBackedPay}} 
+            </view>
+            </view>
+            <view class="_div data-v-fb28b87a List" hidden="{{!amountNeedPay}}">
+                <view class="_div data-v-fb28b87a ListLeft">待还金额(元)</view>
+                <view class="_div data-v-fb28b87a ListRight">{{amountNeedPay}}</view>
+            </view>
+            <view class="_div data-v-fb28b87a List" hidden="{{!tenderBalance}}">
+                <view class="_div data-v-fb28b87a ListLeft">项目余额</view>
+                <view class="_div data-v-fb28b87a ListRight">{{tenderBalance}}</view>
+            </view>
+            <view class="_div data-v-fb28b87a listsSiteFoot flex">
+                <view bindtap="handleProxy" class="_div data-v-fb28b87a listsSiteFootText" data-comkey="{{$k}}" data-eventid="{{'0'}}">本期明细</view>
+                <view class="_div data-v-fb28b87a listsSiteFootText" wx:if="{{!isShowWithhold}}"></view>
+                <view bindtap="handleProxy" class="_div data-v-fb28b87a listsSiteFootText" data-comkey="{{$k}}" data-eventid="{{'1'}}">还款明细</view>
+                <view bindtap="handleProxy" class="_div data-v-fb28b87a listsSiteFootText noLine" data-comkey="{{$k}}" data-eventid="{{'2'}}" wx:if="{{isShowWithhold}}">建单代扣</view>
+            </view>
+        </view>
+    </view>
+</template>

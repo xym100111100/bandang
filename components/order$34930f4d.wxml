@@ -1,0 +1,46 @@
+<template name="order$34930f4d">
+    <view class="_div data-v-20f4f28e information">
+        <view class="_ul data-v-20f4f28e img_list">
+            <view class="_li data-v-20f4f28e" key="{{index}}" wx:for="{{loanAttachment}}" wx:key="index">
+                <view class="_div data-v-20f4f28e img_box">
+                    <image class="_image data-v-20f4f28e" mode="widthFix" src="{{item.urlList[0]?item.urlList[0].fullUrl:holedImg}}" width="100%"></image>
+                </view>
+                <view bindtap="handleProxy" class="_div data-v-20f4f28e up_class" data-comkey="{{$k}}" data-eventid="{{'1-'+index}}" wx:if="{{item.urlList&&item.urlList.length==0}}"></view>
+                <view bindtap="handleProxy" class="_div data-v-20f4f28e up_class" data-comkey="{{$k}}" data-eventid="{{'0-'+index}}" wx:else></view>
+                <view class="_div data-v-20f4f28e img_info">
+                    <view class="_p data-v-20f4f28e img_title">{{item.typeName}}</view>
+                    <view class="_p data-v-20f4f28e">
+                        <label class="_span data-v-20f4f28e">{{item.urlCount}}</label>
+                        <label class="_span data-v-20f4f28e" wx:if="{{item.urlList&&item.urlList.length>0}}">编辑</label>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="_div data-v-20f4f28e {{[showBottomPopup?'pupopBottomShow pupopBottom':'',!showBottomPopup?'pupopBottom':'']}}">
+            <view bindtap="handleProxy" class="_div data-v-20f4f28e pupopBottom__mask" data-comkey="{{$k}}" data-eventid="{{'2'}}"></view>
+            <view class="_div data-v-20f4f28e pupopBottom__container">
+                <view class="_div data-v-20f4f28e pupop_b">
+                    <view class="_div data-v-20f4f28e pupopHeader">
+                        <text class="_text data-v-20f4f28e">{{attachmentName}}</text>
+                        <image bindtap="handleProxy" class="_image data-v-20f4f28e" data-comkey="{{$k}}" data-eventid="{{'3'}}" src="/static/images/preliminary/close.png"></image>
+                    </view>
+                </view>
+                <view class="_div data-v-20f4f28e listBox">
+                    <view class="_ul data-v-20f4f28e up_img_list">
+                        <view class="_li data-v-20f4f28e previewList" key="{{index}}" wx:for="{{uploadImgList}}" wx:key="index">
+                            <image class="_image data-v-20f4f28e" mode="aspectFit" src="{{item.url}}"></image>
+                            <image bindtap="handleProxy" class="_image data-v-20f4f28e deleteImg" data-comkey="{{$k}}" data-eventid="{{'4-'+index}}" src="{{deleteSrc}}"></image>
+                            <view class="_p data-v-20f4f28e" style=" {{'width:'+(uploadList[index]&&uploadList[index].percent+'%')+';'}}"></view>
+                        </view>
+                        <view bindtap="handleProxy" class="_li data-v-20f4f28e add_pic" data-comkey="{{$k}}" data-eventid="{{'5'}}" wx:if="{{uploadImgList.length<20}}">
+                            <image class="_image data-v-20f4f28e" mode="aspectFit" src="/static/images/uploadImg.png"></image>
+                        </view>
+                    </view>
+                    <view class="_div data-v-20f4f28e">
+                        <view bindtap="handleProxy" class="_div data-v-20f4f28e upBtn" data-comkey="{{$k}}" data-eventid="{{'6'}}">上传</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>

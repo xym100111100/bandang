@@ -1,0 +1,29 @@
+<template name="order$7928e4e0">
+    <view class="_div data-v-2e994f3f order-page">
+        <view class="_div data-v-2e994f3f search-item">
+            <icon class="_icon data-v-2e994f3f search-icon" size="17" type="search"></icon>
+            <input bindconfirm="handleProxy" bindinput="handleProxy" class="_input data-v-2e994f3f" confirmType="search" data-comkey="{{$k}}" data-eventid="{{'0'}}" placeholder="姓名/手机号" type="text" value="{{keywords}}"></input>
+        </view>
+        <view class="_div data-v-2e994f3f" wx:if="{{noneFlag}}">
+            <template is="index$35892c44" data="{{...$root[$kk+'0-'+index],$root:$root}}" wx:for="{{listData}}" wx:key="item.loanNo"></template>
+        </view>
+        <template is="index$36ab1cab" data="{{...$root[$kk+'1'],$root:$root}}" wx:else></template>
+        <view class="_div data-v-2e994f3f modal-cont" wx:if="{{showModal}}">
+            <view class="_div data-v-2e994f3f contant">
+                <view class="_div data-v-2e994f3f input-group">
+                    <view class="_div data-v-2e994f3f title">
+                        <view class="_p data-v-2e994f3f">请输入作废理由</view>
+                        <view class="_p data-v-2e994f3f">请不要输入表情或者特殊字符</view>
+                    </view>
+                    <input bindinput="handleProxy" class="_input data-v-2e994f3f" data-comkey="{{$k}}" data-eventid="{{'2'}}" placeholder="请输入作废理由" type="text" value="{{operatorDesc}}"></input>
+                </view>
+                <view class="_div data-v-2e994f3f btn-item">
+                    <view bindtap="handleProxy" class="_div data-v-2e994f3f cancel" data-comkey="{{$k}}" data-eventid="{{'3'}}">取消</view>
+                    <view bindtap="handleProxy" class="_div data-v-2e994f3f confirm" data-comkey="{{$k}}" data-eventid="{{'4'}}">确定</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="index$35892c44"></import>
+<import src="index$36ab1cab"></import>

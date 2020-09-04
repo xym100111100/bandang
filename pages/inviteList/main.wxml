@@ -1,0 +1,2 @@
+<import src="../../components/inviteList$6c37040b"></import>
+<template is="inviteList$6c37040b" data="{{...$root['0'],$root:$root}}"></template>

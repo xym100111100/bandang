@@ -1,0 +1,50 @@
+
+
+.text-center {
+    text-align: center;
+}
+
+.personal-page .personal-header-item {
+    padding: 60rpx 10rpx;
+    background: #fff;
+}
+
+.personal-page .header-img {
+    width: 128rpx;
+    height: 128rpx;
+    border-radius: 100%;
+    margin: 40rpx auto;
+}
+
+.personal-page .personal-header-item ._h1 {
+    font-size: 32rpx;
+    color: #313131;
+    margin-bottom: 10rpx;
+    font-weight: 400;
+}
+
+.personal-page .personal-header-item ._p {
+    font-size: 26rpx;
+    color: #757575;
+    line-height: 37rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer-btn {
+    width: 30%;
+    height: 94rpx;
+    margin: 20rpx auto;
+}
+
+.footer-btn ._button {
+    background-color: #468cee;
+    color: #fff;
+    border: none;
+    border-radius: 10rpx;
+}
+
+.footer-btn ._button:after {
+    border: none;
+}

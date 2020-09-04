@@ -1,0 +1,20 @@
+<template name="home$3c307663">
+    <view class="_div data-v-842c77b8 home-page">
+        <scroll-view class="_scroll-view data-v-842c77b8 home-tab" enableFlex="true" scrollLeft="{{scrollLeft}}" scrollWithAnimation="{{true}}" scrollX="{{true}}">
+            <view class="_div data-v-842c77b8 flex" wx:if="{{homeList.length>1}}">
+                <view bindtap="handleProxy" class="_div data-v-842c77b8 tab-item flex {{currentCode==item.resourceCode?'active':''}}" data-comkey="{{$k}}" data-eventid="{{'0-'+index}}" data-id="{{index}}" data-resource="{{item}}" key="{{index}}" wx:for="{{homeList}}" wx:key="index">
+                    <label class="_span data-v-842c77b8 item-text">{{item.resourceName}}</label>
+                    <label class="_span data-v-842c77b8 item-line"></label>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="_div data-v-842c77b8 home-list {{currentCode==item.resourceCode?'show':''}}" key="{{index}}" wx:for="{{homeList}}" wx:key="index">
+            <view bindtap="handleProxy" class="_div data-v-842c77b8 home-item" data-comkey="{{$k}}" data-eventid="{{'1-'+index+'-'+subIndex}}" data-name="{{subItem.resourceCode}}" key="{{subIndex}}" wx:for="{{homeList[index].subMenu}}" wx:for-index="subIndex" wx:for-item="subItem" wx:key="subIndex">
+                <label class="_span data-v-842c77b8 {{['home-item-icon',subItem.resourceCode]}}"></label>
+                <view class="_p data-v-842c77b8 hid-font">{{subItem.resourceName}}</view>
+            </view>
+        </view>
+        <template is="index$f4bdd05c" data="{{...$root[$kk+'0'],$root:$root}}" wx:if="{{isShowQrcode}}"></template>
+    </view>
+</template>
+<import src="index$f4bdd05c"></import>

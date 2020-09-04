@@ -1,0 +1,38 @@
+<template name="repayment$4c42b83a">
+    <view class="_div data-v-aac1107c accountInforPage">
+        <view class="_div data-v-aac1107c aIPList flex">
+            <view class="_div data-v-aac1107c aIPListLeft">
+				银行卡账户名:
+			</view>
+            <view class="_div data-v-aac1107c aIPListRight">
+                <input bindinput="handleProxy" class="_input data-v-aac1107c aIPListRightInput" data-comkey="{{$k}}" data-eventid="{{'0'}}" disabled="{{disabled}}" placeholder="请输入收款人账户名" value="{{accountName}}"></input>
+                <view bindtap="handleProxy" class="_div data-v-aac1107c clearBox" data-comkey="{{$k}}" data-eventid="{{'1'}}" wx:if="{{accountName!=''}}">
+                    <image alt class="_img data-v-aac1107c" src="/static/images/clear.png"></image>
+                </view>
+            </view>
+        </view>
+        <view class="_div data-v-aac1107c aIPList flex">
+            <view class="_div data-v-aac1107c aIPListLeft">
+				银行卡号码:
+			</view>
+            <view class="_div data-v-aac1107c aIPListRight">
+                <input bindinput="handleProxy" class="_input data-v-aac1107c aIPListRightInput" data-comkey="{{$k}}" data-eventid="{{'2'}}" disabled="{{disabled}}" placeholder="请输入收款人银行卡号码" value="{{accountId}}"></input>
+                <view bindtap="handleProxy" class="_div data-v-aac1107c clearBox" data-comkey="{{$k}}" data-eventid="{{'3'}}" wx:if="{{accountId!=''}}">
+                    <image alt class="_img data-v-aac1107c" src="/static/images/clear.png"></image>
+                </view>
+            </view>
+        </view>
+        <view class="_div data-v-aac1107c aIPList flex">
+            <view class="_div data-v-aac1107c aIPListLeft">
+				银行名:
+			</view>
+            <view class="_div data-v-aac1107c aIPListRight">
+                <input bindinput="handleProxy" class="_input data-v-aac1107c aIPListRightInput" data-comkey="{{$k}}" data-eventid="{{'4'}}" disabled="{{disabled}}" placeholder="请输入收款人银行名" value="{{bankName}}"></input>
+                <view bindtap="handleProxy" class="_div data-v-aac1107c clearBox" data-comkey="{{$k}}" data-eventid="{{'5'}}" wx:if="{{bankName!=''}}">
+                    <image alt class="_img data-v-aac1107c" src="/static/images/clear.png"></image>
+                </view>
+            </view>
+        </view>
+        <button bindtap="handleProxy" class="_button data-v-aac1107c inforTrue" data-comkey="{{$k}}" data-eventid="{{'6'}}">确认</button>
+    </view>
+</template>

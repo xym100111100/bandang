@@ -1,0 +1,12 @@
+<template name="index$f4bdd05c">
+    <view class="_div data-v-660a805a code-model flex align-items-center">
+        <view class="_div data-v-660a805a code-cont">
+            <view class="_div data-v-660a805a code-item">
+                <view class="_p data-v-660a805a {{isRefuse?'code-title red':'code-title'}}">{{title}}</view>
+                <image alt="二维码图片" class="_img data-v-660a805a" src="{{codeImg}}"></image>
+                <view class="_p data-v-660a805a font-xs">{{tip}}</view>
+            </view>
+            <icon bindtap="handleProxy" class="_icon data-v-660a805a close-btn" data-comkey="{{$k}}" data-eventid="{{'0'}}" size="20" type="clear"></icon>
+        </view>
+    </view>
+</template>

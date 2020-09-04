@@ -1,0 +1,242 @@
+./static/css/vendor.wxss.bottomKong.data-v-a4bc7cb0 {
+    height: 600rpx;
+}
+
+page.data-v-a4bc7cb0 {
+    background: #f3f3f3;
+}
+
+.remarksTextarea.data-v-a4bc7cb0 {
+    font-size: 28rpx;
+    width: 100%;
+    display: block;
+    height: 100%;
+    line-height: 30rpx;
+}
+
+.tureFootBtn.data-v-a4bc7cb0 {
+    background: #468cee;
+    width: 100%;
+    line-height: 98rpx;
+    text-align: center;
+    border-radius: 0;
+    font-size: 36rpx;
+    color: #fff;
+}
+
+.paddingBottom.data-v-a4bc7cb0 {
+    padding-bottom: 450rpx;
+}
+
+.remarkTextInput.data-v-a4bc7cb0 {
+    border: 1rpx solid #c4c4c4;
+    margin: 0 32rpx;
+    height: 140rpx;
+    overflow: hidden;
+}
+
+.remarksSiteTitle.data-v-a4bc7cb0 {
+    height: 70rpx;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    color: #313131;
+    font-weight: 700;
+    padding-left: 30rpx;
+}
+
+.remarksSite.data-v-a4bc7cb0 {
+    background: #fff;
+    padding-bottom: 70rpx;
+}
+
+.img.data-v-a4bc7cb0 {
+    width: 100%;
+    height: 100%;
+}
+
+.imgSiteDeleteIcon.data-v-a4bc7cb0 {
+    width: 32rpx;
+    height: 32rpx;
+    position: absolute;
+    top: 10rpx;
+    right: 20rpx;
+}
+
+.imgSite.uploanImgText.data-v-a4bc7cb0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgSite.uploanImgText ._img.data-v-a4bc7cb0 {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.imgSite.data-v-a4bc7cb0 {
+    width: 160rpx;
+    height: 160rpx;
+    margin-left: 18rpx;
+    margin-bottom: 20rpx;
+    border: 1rpx solid #c4c4c4;
+    position: relative;
+    float: left;
+}
+
+.imgShowList.data-v-a4bc7cb0 {
+    padding-left: 10rpx;
+}
+
+.uploanSiteTitle.data-v-a4bc7cb0 {
+    padding-top: 10rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    padding-left: 30rpx;
+    font-size: 28rpx;
+    color: #313131;
+}
+
+.uploanSite.data-v-a4bc7cb0 {
+    background: #fff;
+    overflow: hidden;
+}
+
+.ListRightInput.data-v-a4bc7cb0 {
+    text-align: right;
+    font-size: 28rpx;
+    height: 40rpx;
+    margin-top: 32rpx;
+    line-height: 40rpx;
+}
+
+.BWPageMoneyTige ._span.data-v-a4bc7cb0 {
+    color: #f34949;
+}
+
+.BWPageMoneyTige.data-v-a4bc7cb0 {
+    padding: 20rpx 30rpx;
+    background: #f3f3f3;
+    font-size: 26rpx;
+    color: #757575;
+}
+
+.receivablesInforDetails.data-v-a4bc7cb0 {
+    float: left;
+    line-height: 40rpx;
+    width: 462rpx;
+    padding-top: 40rpx;
+    text-align: right;
+    color: #313131;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.rightIcom.data-v-a4bc7cb0 {
+    width: 28rpx;
+    height: 28rpx;
+    padding-top: 42rpx;
+    float: right;
+    margin-left: 10rpx;
+}
+
+.BWPageListRight.data-v-a4bc7cb0 {
+    float: right;
+    width: 300rpx;
+    height: 112rpx;
+    line-height: 112rpx;
+    color: #313131;
+    text-align: right;
+    position: relative;
+    padding-right: 35rpx;
+}
+
+.BWPageListRight.clearInput.data-v-a4bc7cb0 {
+    padding-right: 65rpx;
+}
+
+.BWPageListRight .clearBox.data-v-a4bc7cb0 {
+    position: absolute;
+    height: 52rpx;
+    right: 30rpx;
+    top: 32rpx;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    z-index: 2;
+}
+
+.BWPageListRight .clearBox ._img.data-v-a4bc7cb0 {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.BWPageListLeft.data-v-a4bc7cb0 {
+    float: left;
+    width: 300rpx;
+    height: 112rpx;
+    line-height: 112rpx;
+    color: #313131;
+}
+
+.BWPageList .receivables.data-v-a4bc7cb0 {
+    width: 100rpx;
+    height: 152rpx;
+    line-height: 152rpx;
+}
+
+.BWPageList .receivablesIcon.data-v-a4bc7cb0 {
+    padding-top: 62rpx;
+}
+
+.BWPageList .receivablesInfor.data-v-a4bc7cb0 {
+    width: 500rpx;
+    height: 152rpx;
+}
+
+.BWPageList.data-v-a4bc7cb0 {
+    height: 112rpx;
+    margin-left: 30rpx;
+    border-bottom: 1rpx solid #f2f2f2;
+    font-size: 28rpx;
+    color: #212121;
+    line-height: 112rpx;
+}
+
+.BWPageLists .receivablesList.data-v-a4bc7cb0 {
+    height: 152rpx;
+}
+
+.BWPageLists.data-v-a4bc7cb0 {
+    background: #fff;
+    margin-bottom: 20rpx;
+}
+
+.BWPageTitle ._span.data-v-a4bc7cb0 {
+    color: #468cee;
+}
+
+.BWPageTitle.data-v-a4bc7cb0 {
+    height: 92rpx;
+    padding: 0 30rpx;
+    font-size: 26rpx;
+    color: #757575;
+    line-height: 40rpx;
+    padding-top: 18rpx;
+}
+
+.selectSite.data-v-a4bc7cb0 {
+    height: 88rpx;
+    background: #f0f;
+    line-height: 88rpx;
+    padding: 0 30rpx;
+}
+
+.selsctSite.data-v-a4bc7cb0 {
+    height: 188rpx;
+    background: #30f;
+}
+
+.BWPage.data-v-a4bc7cb0 {
+    background: #f3f3f3;
+}

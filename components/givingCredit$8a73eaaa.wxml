@@ -1,0 +1,40 @@
+<template name="givingCredit$8a73eaaa">
+    <view class="_div data-v-5f0bf128 {{prodCode==='P1109'||prodCode==='P6666'?'givingCredit-page minusPd':'givingCredit-page'}}">
+        <view class="_div data-v-5f0bf128 search-item">
+            <icon class="_icon data-v-5f0bf128 search-icon" size="17" type="search"></icon>
+            <input bindconfirm="handleProxy" bindinput="handleProxy" class="_input data-v-5f0bf128" confirmType="search" data-comkey="{{$k}}" data-eventid="{{'0'}}" placeholder="姓名/手机号" type="text" value="{{keywords}}"></input>
+        </view>
+        <view bindtap="handleProxy" class="_div data-v-5f0bf128 top_tip" data-comkey="{{$k}}" data-eventid="{{'1'}}" wx:if="{{needClientSourceCount&&creditListType==0}}">
+        您有{{needClientSourceCount}}条未选择渠道来源
+    </view>
+        <view class="_div data-v-5f0bf128 home-tab flex" wx:if="{{source==0&&prodCode!='P1109'&&prodCode!='P6666'}}">
+            <view bindtap="handleProxy" class="_div data-v-5f0bf128 {{creditListType==item.value?'active tab-item flex flex-item-1':'tab-item flex flex-item-1'}}" data-comkey="{{$k}}" data-eventid="{{'2-'+index}}" key="{{item.name}}" wx:for="{{tabList}}" wx:key="item.name">
+                <label class="_span data-v-5f0bf128 item-text">{{item.name}}</label>
+                <label class="_span data-v-5f0bf128 item-line"></label>
+            </view>
+        </view>
+        <view class="_div data-v-5f0bf128" wx:if="{{isNone}}">
+            <template is="index$35892c44" data="{{...$root[$kk+'0-'+index],$root:$root}}" wx:for="{{listData}}" wx:key="item.creditNo"></template>
+        </view>
+        <template is="index$36ab1cab" data="{{...$root[$kk+'1'],$root:$root}}" wx:else></template>
+        <template is="index$28129b31" data="{{...$root[$kk+'2'],$root:$root,$for:{default:'data-v-5f0bf128-default-2'},$slotdefault:'data-v-5f0bf128-default-2'}}"></template>
+        <view class="_div data-v-5f0bf128 modal-cont" wx:if="{{rejectModal}}">
+            <view class="_div data-v-5f0bf128 contant">
+                <view class="_div data-v-5f0bf128 input-group">
+                    <view class="_div data-v-5f0bf128 title">
+                        <view class="_p data-v-5f0bf128">客户:{{customerName}},确认拒绝吗？</view>
+                        <view class="_p data-v-5f0bf128">请不要输入表情或者特殊字符</view>
+                    </view>
+                    <input bindinput="handleProxy" class="_input data-v-5f0bf128" data-comkey="{{$k}}" data-eventid="{{'6'}}" placeholder="请输入拒绝理由" type="text" value="{{auditReason}}"></input>
+                </view>
+                <view class="_div data-v-5f0bf128 btn-item">
+                    <view bindtap="handleProxy" class="_div data-v-5f0bf128 cancel" data-comkey="{{$k}}" data-eventid="{{'7'}}">取消</view>
+                    <view bindtap="handleProxy" class="_div data-v-5f0bf128 confirm" data-comkey="{{$k}}" data-eventid="{{'8'}}">确定</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="index$35892c44"></import>
+<import src="index$36ab1cab"></import>
+<import src="index$28129b31"></import>

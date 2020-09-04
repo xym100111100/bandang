@@ -1,0 +1,79 @@
+./static/css/vendor.wxssbody {
+    background: #f3f3f3;
+}
+
+._button:after {
+    border: none;
+}
+
+.footBtnSite {
+    width: 160rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 0;
+    border: 1rpx solid #468cee;
+    border-radius: 10rpx;
+    float: right;
+    margin-right: 30rpx;
+    font-size: 28rpx;
+    color: #468cee;
+}
+
+.footSite {
+    height: 90rpx;
+    line-height: 120rpx;
+    padding-top: 30rpx;
+}
+
+.rightIcom {
+    width: 28rpx;
+    height: 28rpx;
+    float: right;
+    margin-left: 10rpx;
+}
+
+.selectList .rightBgColor {
+    background: #468cee;
+    border-radius: 0 8rpx 8rpx 0;
+    color: #fff;
+}
+
+.selectList .leftBgColor {
+    background: #468cee;
+    border-radius: 8rpx 0 0 8rpx;
+    color: #fff;
+}
+
+.selectListItem {
+    text-align: center;
+    font-size: 26rpx;
+    color: #468cee;
+    line-height: 65rpx;
+}
+
+.selectList {
+    width: 690rpx;
+    margin: 20rpx auto 0;
+    border-radius: 8rpx;
+    border: 1rpx solid #468cee;
+    height: 65rpx;
+}
+
+.screenPageTitle {
+    padding-left: 30rpx;
+    height: 98rpx;
+    line-height: 98rpx;
+    font-size: 30rpx;
+    color: #2b3040;
+    background: #fff;
+}
+
+.screenPage {
+    background: #fff;
+    overflow: hidden;
+}
+
+.span-lh {
+    display: flex;
+    align-items: center;
+}

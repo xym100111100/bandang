@@ -1,0 +1,143 @@
+./static/css/vendor.wxss.merchants-details-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.merchants-details-page .cell-list {
+    margin-top: 20rpx;
+    background: #fff;
+}
+
+.merchants-details-page .cell-list .cell-item {
+    border-bottom: 1rpx solid #f2f2f2;
+    color: #495060;
+    overflow: hidden;
+    padding: 20rpx 32rpx;
+}
+
+.merchants-details-page .cell-list ._p {
+    font-size: 30rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+}
+
+.merchants-details-page .cell-list ._p.cell-title {
+    color: #1c2438;
+    min-width: 250rpx;
+}
+
+.merchants-details-page .merchants-activities {
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    background: #fff;
+    padding: 0 30rpx;
+}
+
+.merchants-details-page .merchants-activities .model-title {
+    font-size: 28rpx;
+    font-weight: 700;
+    color: #212121;
+    padding-top: 40rpx;
+    padding-bottom: 20rpx;
+}
+
+.merchants-details-page .activity-item {
+    position: relative;
+    border: 1rpx solid #dde0f3;
+    border-radius: 20rpx;
+    padding: 60rpx 30rpx;
+    margin-bottom: 30rpx;
+}
+
+.merchants-details-page .activity-item .activity-status {
+    border: 1rpx solid;
+    border-radius: 0 20rpx 0 20rpx;
+    padding: 8rpx 20rpx;
+    font-size: 28rpx;
+    position: absolute;
+    top: -1rpx;
+    right: 0;
+    z-index: 9;
+}
+
+.merchants-details-page .activity-item .active {
+    background: rgba(0,119,245,.1);
+    border-color: #57a8fe;
+    color: #0077f5;
+}
+
+.merchants-details-page .activity-item .expired {
+    background: hsla(0,0%,60%,.1);
+    border-color: #999;
+    color: #999;
+}
+
+.merchants-details-page .activity-item .activity-name {
+    padding-bottom: 22rpx;
+    font-size: 36rpx;
+    color: #212121;
+    font-weight: 700;
+}
+
+.merchants-details-page .activity-item .item-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 8rpx;
+}
+
+.merchants-details-page .activity-item .item-label {
+    width: 100rpx;
+    font-size: 24rpx;
+    color: #757575;
+    margin-right: 24rpx;
+    padding-top: 2rpx;
+}
+
+.merchants-details-page .activity-item .w3 {
+    letter-spacing: 9rpx;
+}
+
+.merchants-details-page .activity-item .item-content {
+    font-size: 28rpx;
+    font-weight: 700;
+    color: #212121;
+    flex: 1;
+}
+
+.merchants-details-page .activity-item .activity-bg {
+    width: 300rpx;
+    height: 300rpx;
+    position: absolute;
+    bottom: 1rpx;
+    right: 1rpx;
+    z-index: 0;
+}
+
+.merchants-details-page .activity-item .activity-content {
+    position: relative;
+    z-index: 9;
+}
+
+.merchants-details-page .activity-item .activity-note {
+    margin-top: 30rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.merchants-details-page .activity-item .activity-note ._img {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.merchants-details-page .activity-item .activity-note ._span {
+    margin-left: 10rpx;
+    font-size: 26rpx;
+    color: #757575;
+}

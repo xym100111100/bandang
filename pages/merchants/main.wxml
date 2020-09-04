@@ -1,0 +1,29 @@
+
+<view class="_div data-v-80ede748 merchants-page">
+  <view class="_div data-v-80ede748 search-item">
+    <icon class="_icon data-v-80ede748 search-icon" size="17" type="search"></icon>
+    <input bindconfirm="handleProxy" bindinput="handleProxy" class="_input data-v-80ede748" confirmType="search"
+      data-comkey="{{$k}}" data-eventid="{{'0'}}" placeholder="{{searchPlace}}" type="text"
+      value="{{searchVal}}"></input>
+  </view>
+  <view class="_div data-v-80ede748 merchants-list" >
+    
+
+      <view class="_div data-v-2780d762 card-item"  wx:for="{{merchantsList}}"   wx:key="index" >
+        <view bindtap="handleProxy" class="_div data-v-2780d762 card-title-item flex align-items-center" data-comkey="{{$k}}" data-eventid="{{'0'}}" data-partnerno="{{partnerNo}}" data-userid="{{userid}}">
+            <view class="_p data-v-2780d762 card-icon" style=" {{item.iconInfos.style}}">{{item.iconInfos.text}}</view>
+            <view class="_p data-v-2780d762 title flex-item-1">{{item.text}}</view>
+            <view class="_p data-v-2780d762 right-icon"></view>
+        </view>
+        <view class="_div data-v-2780d762 btn-item flex">
+            <button bindtap="handleProxy" class="_button data-v-2780d762" data-comkey="{{$k}}" data-eventid="{{'1'}}" data-partnerno="{{partnerNo}}" data-type="{{1}}" data-userid="{{userid}}" hidden="{{!item.showExpeditedCreditQRCode}}">加急二维码</button>
+            <button bindtap="handleProxy" class="_button data-v-2780d762" data-comkey="{{$k}}" data-eventid="{{'2'}}" data-partnerno="{{partnerNo}}" data-type="{{2}}" data-userid="{{userid}}" hidden="{{!item.showSupCreditQRCode}}">辅助授信</button>
+            <button bindtap="handleProxy" class="_button data-v-2780d762" data-comkey="{{$k}}" data-eventid="{{'3'}}" data-partnerno="{{partnerNo}}" data-userid="{{userid}}" hidden="{{!item.isShowCustomerReg}}">客户登记</button>
+            <button bindtap="handleProxy" class="_button data-v-2780d762" data-comkey="{{$k}}" data-eventid="{{'4'}}" data-partnerno="{{partnerNo}}" data-type="{{0}}" data-urgent="{{false}}" data-userid="{{userid}}" hidden="{{!item.showNormalCreditQRCode}}">普通二维码</button>
+            <button bindtap="handleProxy" class="_button data-v-2780d762" data-comkey="{{$k}}" data-eventid="{{'5'}}" data-partnerno="{{partnerNo}}" data-type="{{3}}" data-userid="{{userid}}" hidden="{{!item.showPreferenceQRCode}}">活动</button>
+        </view>
+    </view>
+
+  </view>
+  
+</view>

@@ -1,0 +1,94 @@
+<template name="preliminary_list$736ddf0b">
+    <view class="_div data-v-6163934c">
+        <template is="search$f9e075ca" data="{{...$root[$kk+'0'],$root:$root}}"></template>
+        <view class="_ul data-v-6163934c listBox" wx:if="{{noneFlag}}">
+            <view class="_li data-v-6163934c" key="{{index}}" wx:for="{{listData}}" wx:key="index">
+                <view class="_div data-v-6163934c left">
+                    <view class="_div data-v-6163934c top">
+                        <view class="_p data-v-6163934c name">{{item.customerName}}
+                        <label class="_span data-v-6163934c">({{item.mobile}})</label>
+                        </view>
+                        <view class="_div data-v-6163934c action">
+                            <label class="_span data-v-6163934c status auditing" wx:if="{{item.creditStatus=='auditing'}}">{{item.creditStatusDescritpion}}</label>
+                            <label class="_span data-v-6163934c status passed" wx:elif="{{item.creditStatus=='passed'}}">{{item.creditStatusDescritpion}}</label>
+                            <label class="_span data-v-6163934c status rejected" wx:elif="{{item.creditStatus=='rejected'}}">{{item.creditStatusDescritpion}}</label>
+                            <label class="_span data-v-6163934c status auditing" wx:else>{{item.creditStatusDescritpion}}</label>
+                        </view>
+                    </view>
+                    <view class="_p data-v-6163934c rejectReason" wx:if="{{item.showRejectReason}}">失败原因：{{item.rejectReason}}</view>
+                </view>
+                <view class="_div data-v-6163934c more" wx:if="{{item.hasHistory||item.showPassBtn||item.showAdd2RiskGrayNameListBtn}}">
+                    <button bindtap="handleProxy" class="_button data-v-6163934c primary btn" data-comkey="{{$k}}" data-eventid="{{'0-'+index}}" wx:if="{{item.hasHistory}}">历史记录</button>
+                    <button bindtap="handleProxy" class="_button data-v-6163934c operation btn" data-comkey="{{$k}}" data-eventid="{{'1-'+index}}" wx:if="{{item.showPassBtn}}">通过</button>
+                    <button bindtap="handleProxy" class="_button data-v-6163934c operation btn" data-comkey="{{$k}}" data-eventid="{{'2-'+index}}" disabled="{{!item.couldAdd2RiskGrayNameList}}" wx:if="{{item.showAdd2RiskGrayNameListBtn}}">优质客户</button>
+                </view>
+            </view>
+        </view>
+        <template is="index$36ab1cab" data="{{...$root[$kk+'1'],$root:$root}}" wx:else></template>
+        <view class="_div data-v-6163934c hisMask" wx:if="{{pupShow}}">
+            <view class="_div data-v-6163934c innerCont">
+                <image bindtap="handleProxy" class="_img data-v-6163934c" data-comkey="{{$k}}" data-eventid="{{'3'}}" src="/static/images/preliminary/close.png"></image>
+                <view class="_div data-v-6163934c" wx:if="{{lastCreditHistory}}">
+                    <view class="_h1 data-v-6163934c">最近一次历史普通授信记录</view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">所属区域:</label>
+                        <label class="_span data-v-6163934c">{{lastCreditHistory.bdArea||'--'}}</label>
+                    </view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">对应BD:</label>
+                        <label class="_span data-v-6163934c">{{lastCreditHistory.bdName||'--'}}</label>
+                    </view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">申请时间:</label>
+                        <label class="_span data-v-6163934c">{{lastCreditHistory.applyDate||'--'}}</label>
+                    </view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">客户姓名:</label>
+                        <label class="_span data-v-6163934c">{{lastCreditHistory.clientName||'--'}}</label>
+                    </view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">医院名称:</label>
+                        <label class="_span data-v-6163934c">{{lastCreditHistory.hospital||'--'}}</label>
+                    </view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">授信状态:</label>
+                        <label class="_span data-v-6163934c">{{lastCreditHistory.state||'--'}}</label>
+                    </view>
+                </view>
+                <view class="_div data-v-6163934c" wx:if="{{lastLoanTradeHistory}}">
+                    <view class="_h1 data-v-6163934c">最近一次历史借款记录</view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">所属区域:</label>
+                        <label class="_span data-v-6163934c">{{lastLoanTradeHistory.bdArea||'--'}}</label>
+                    </view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">对应BD:</label>
+                        <label class="_span data-v-6163934c">{{lastLoanTradeHistory.bdName||'--'}}</label>
+                    </view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">申请时间:</label>
+                        <label class="_span data-v-6163934c">{{lastLoanTradeHistory.applyDate||'--'}}</label>
+                    </view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">客户姓名:</label>
+                        <label class="_span data-v-6163934c">{{lastLoanTradeHistory.clientName||'--'}}</label>
+                    </view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">医院名称:</label>
+                        <label class="_span data-v-6163934c">{{lastLoanTradeHistory.hospital||'--'}}</label>
+                    </view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">借款状态:</label>
+                        <label class="_span data-v-6163934c">{{lastLoanTradeHistory.state||'--'}}</label>
+                    </view>
+                    <view class="_p data-v-6163934c barList">
+                        <label class="_span data-v-6163934c">第一期还款日期:</label>
+                        <label class="_span data-v-6163934c">{{lastLoanTradeHistory.firstRepayDate||'--'}}</label>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="search$f9e075ca"></import>
+<import src="index$36ab1cab"></import>

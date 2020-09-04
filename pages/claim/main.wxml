@@ -1,0 +1,2 @@
+<import src="../../components/claim$6273344e"></import>
+<template is="claim$6273344e" data="{{...$root['0'],$root:$root}}"></template>

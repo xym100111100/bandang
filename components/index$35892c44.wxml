@@ -1,0 +1,99 @@
+<template name="index$35892c44">
+    <view class="_div data-v-00bd9386">
+        <view class="_div data-v-00bd9386 orderBox">
+            <view class="_p data-v-00bd9386 header">
+                <label class="_span data-v-00bd9386 name">
+                {{dataSource.customerName}}
+                <label class="_span data-v-00bd9386 idCard" wx:if="{{boxType=='order'&&dataSource.certNo}}">({{dataSource.certNo}})</label>
+                </label>
+                <label class="_span data-v-00bd9386 time">{{dataSource.orderDate||dataSource.applyDate}}</label>
+            </view>
+            <view class="_div data-v-00bd9386 info" id="cellWidth">
+                <view class="_p data-v-00bd9386" wx:if="{{boxType=='order'}}">
+                    <label class="_span data-v-00bd9386 title">申请金额: </label>
+                    <label class="_span data-v-00bd9386">{{dataSource.orderAmount/100||0}}元</label>
+                </view>
+                <view class="_p data-v-00bd9386" wx:if="{{boxType=='credit'}}">
+                    <label class="_span data-v-00bd9386 title">项目金额: </label>
+                    <label class="_span data-v-00bd9386">{{dataSource.applyItemAmount/100||0}}元</label>
+                </view>
+                <view class="_p data-v-00bd9386" wx:if="{{boxType=='credit'&&dataSource.auditAmount}}">
+                    <label class="_span data-v-00bd9386 title">授信额度: </label>
+                    <label class="_span data-v-00bd9386">{{dataSource.auditAmount/100||0}}元</label>
+                </view>
+                <view class="_p data-v-00bd9386" wx:if="{{boxType=='credit'&&dataSource.auditAmount}}">
+                    <label class="_span data-v-00bd9386 title">可用额度: </label>
+                    <label class="_span data-v-00bd9386">{{dataSource.remainAmount/100||0}}元</label>
+                </view>
+                <view class="_p data-v-00bd9386" wx:if="{{boxType=='credit'&&creditListType==0}}">
+                    <label class="_span data-v-00bd9386 title">审核人员: </label>
+                    <label class="_span data-v-00bd9386"> {{dataSource.auditOperatorName||'待分配'}}</label>
+                </view>
+                <view class="_p data-v-00bd9386" wx:if="{{boxType=='credit'&&dataSource.creditLevel}}">
+                    <label class="_span data-v-00bd9386 title">用户等级: </label>
+                    <label class="_span data-v-00bd9386">{{dataSource.creditLevel}}</label>
+                </view>
+                <view bindtap="handleProxy" class="_p data-v-00bd9386" data-comkey="{{$k}}" data-eventid="{{'0'}}" wx:if="{{dataSource.clientSource!==undefined&&creditListType==0}}">
+                    <label class="_span data-v-00bd9386 title">渠道来源: </label>
+                    <label class="_span data-v-00bd9386">{{dataSource.clientSource||'请选择渠道来源'}}</label>
+                </view>
+                <view class="_p data-v-00bd9386" wx:if="{{dataSource.showRejectReason}}">
+                    <label class="_span data-v-00bd9386 title">失败原因: </label>
+                    <label class="_span data-v-00bd9386 reject">{{dataSource.rejectReason}}</label>
+                </view>
+                <view class="_div data-v-00bd9386 statusBox auditing" hidden="{{!dataSource.creditStatusDescritpion}}" wx:if="{{dataSource.creditStatus=='auditing'}}">
+                {{dataSource.creditStatusDescritpion}}
+            </view>
+                <view class="_div data-v-00bd9386 statusBox passed" hidden="{{!dataSource.creditStatusDescritpion}}" wx:elif="{{dataSource.creditStatus=='passed'}}">
+                {{dataSource.creditStatusDescritpion}}
+            </view>
+                <view class="_div data-v-00bd9386 statusBox rejected" hidden="{{!dataSource.creditStatusDescritpion}}" wx:elif="{{dataSource.creditStatus=='rejected'}}">
+                {{dataSource.creditStatusDescritpion}}
+            </view>
+                <view class="_div data-v-00bd9386 statusBox auditing" hidden="{{!dataSource.creditStatusDescritpion}}" wx:else>
+                {{dataSource.creditStatusDescritpion}}
+            </view>
+                <view class="_div data-v-00bd9386 green" wx:if="{{boxType=='credit'&&(dataSource.creditStatus=='passed'||dataSource.creditStatus=='rejected')&&dataSource.loanCreditStatus&&isShowGreenChannel}}">
+                    <button bindtap="handleProxy" class="_button data-v-00bd9386" data-comkey="{{$k}}" data-eventid="{{'1'}}" disabled="{{!dataSource.loanCreditStatus}}">绿色通道</button>
+                </view>
+                <view class="_div data-v-00bd9386 btnGroupWrap" wx:if="{{boxType=='order'}}">
+                    <picker bindchange="handleProxy" class="_picker data-v-00bd9386" data-comkey="{{$k}}" data-eventid="{{'3'}}" disabled="{{!dataSource.showOperationTime}}" mode="date" start="{{startLimitDate}}" value="{{dataSource.formatDate}}">
+                        <view bindtap="handleProxy" class="_div data-v-00bd9386 {{['takeDate',dataSource.showOperationTime?'':'blur']}}" data-comkey="{{$k}}" data-eventid="{{'2'}}">
+                        手术时间{{dataSource.operationTime>0?': '+dataSource.shortDate:''}}
+                    </view>
+                    </picker>
+                    <view bindtap="handleProxy" class="_div data-v-00bd9386 addFile" data-comkey="{{$k}}" data-eventid="{{'4'}}" wx:if="{{boxType=='order'&&dataSource.canUploadAttachment}}">
+                    补充资料
+                </view>
+                    <view bindtap="handleProxy" class="_div data-v-00bd9386 addFile" data-comkey="{{$k}}" data-eventid="{{'5'}}" wx:if="{{boxType=='order'&&dataSource.showLendButton}}">
+                    放款
+                </view>
+                </view>
+            </view>
+            <view class="_div data-v-00bd9386" wx:if="{{boxType=='order'}}">
+                <template is="index$5b3d60dd" data="{{...$root[$kk+'0'],$root:$root}}"></template>
+            </view>
+        </view>
+        <view class="_div data-v-00bd9386 bottom-btn-item">
+            <view class="_div data-v-00bd9386 btn-cont" wx:if="{{boxType=='credit'&&dataSource.showPassBtn}}">
+                <button bindtap="handleProxy" class="_button data-v-00bd9386" data-comkey="{{$k}}" data-eventid="{{'6'}}">通过</button>
+            </view>
+            <view class="_div data-v-00bd9386 btn-cont" wx:if="{{boxType=='credit'&&dataSource.showPassBtnAfterAuditPass}}">
+                <button bindtap="handleProxy" class="_button data-v-00bd9386" data-comkey="{{$k}}" data-eventid="{{'7'}}">通过</button>
+            </view>
+            <view class="_div data-v-00bd9386 btn-cont orange" wx:if="{{boxType=='credit'&&dataSource.showPassBtnAfterAuditPass}}">
+                <button bindtap="handleProxy" class="_button data-v-00bd9386" data-comkey="{{$k}}" data-eventid="{{'8'}}">拒绝</button>
+            </view>
+            <view class="_div data-v-00bd9386 btn-cont blur" wx:if="{{boxType=='order'}}">
+                <button bindtap="handleProxy" class="_button data-v-00bd9386" data-comkey="{{$k}}" data-eventid="{{'9'}}" disabled="{{!dataSource.needAuditConfirm}}">提交稽核</button>
+            </view>
+            <view class="_div data-v-00bd9386 btn-cont blur" wx:if="{{boxType=='order'}}">
+                <button bindtap="handleProxy" class="_button data-v-00bd9386" data-comkey="{{$k}}" data-eventid="{{'10'}}" disabled="{{!dataSource.showAuditDesc}}">查看回退原因</button>
+            </view>
+            <view class="_div data-v-00bd9386 btn-cont orange" wx:if="{{boxType=='order'}}">
+                <button bindtap="handleProxy" class="_button data-v-00bd9386" data-comkey="{{$k}}" data-eventid="{{'11'}}" disabled="{{!dataSource.canCloseOrder}}">作废订单</button>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="index$5b3d60dd"></import>

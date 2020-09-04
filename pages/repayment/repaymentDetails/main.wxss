@@ -1,0 +1,74 @@
+./static/css/vendor.wxssbody {
+    background: #f3f3f3;
+    height: 100%;
+}
+
+.RDPageFontBtn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #3e97f3;
+    border: 0;
+    color: #fff;
+    border-radius: 0;
+}
+
+.RDPage {
+    background: #f3f3f3;
+    padding-top: 1rpx;
+}
+
+.RDPageList {
+    padding-bottom: 128rpx;
+}
+
+.repayList .ListText {
+    min-height: 90rpx;
+    margin: 0 40rpx;
+}
+
+.magText {
+    font-size: 28rpx;
+    padding: 30rpx 0;
+}
+
+.repayListTitle .HuiColor {
+    font-size: 32rpx;
+    color: #999;
+}
+
+.repayListTitle .blueColor {
+    font-size: 32rpx;
+    color: #3e97f3;
+}
+
+.repayListTitle .redColor {
+    font-size: 32rpx;
+    color: #f34949;
+}
+
+.cyanColor {
+    color: #27bc36;
+    font-size: 32rpx;
+}
+
+.LeftLine {
+    position: absolute;
+    left: -40rpx;
+    top: 65rpx;
+    width: 8rpx;
+    height: 60rpx;
+    background: #82c188;
+}
+
+.repayList .repayListTitle {
+    position: relative;
+    padding-top: 40rpx;
+}
+
+.repayList {
+    width: 710rpx;
+    margin: 30rpx auto 0;
+    background-color: #fff;
+    border-radius: 4rpx;
+}

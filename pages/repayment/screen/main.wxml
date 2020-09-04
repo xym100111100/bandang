@@ -1,0 +1,2 @@
+<import src="../../../components/repayment$6ee5024c"></import>
+<template is="repayment$6ee5024c" data="{{...$root['0'],$root:$root}}"></template>

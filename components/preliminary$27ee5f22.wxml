@@ -1,0 +1,16 @@
+<template name="preliminary$27ee5f22">
+    <view class="_div data-v-066e9cce container">
+        <view class="_div data-v-066e9cce itemBox">
+            <form bindreset="formReset" bindsubmit="formSubmit" class="_form data-v-066e9cce">
+                <view class="_div data-v-066e9cce phone publicItem">
+                    <view class="_div data-v-066e9cce inputTitle">手机号码</view>
+                    <view class="_div data-v-066e9cce inputBox">
+                        <image class="_image data-v-066e9cce" src="/static/images/preliminary/mobile.png"></image>
+                        <input bindinput="handleProxy" class="_input data-v-066e9cce" data-comkey="{{$k}}" data-eventid="{{'0'}}" maxlength="11" placeholder="请输入手机号码" placeholderStyle="color:#cacaca;" type="number" value="{{mobile}}"></input>
+                    </view>
+                </view>
+            </form>
+        </view>
+        <button bindtap="handleProxy" class="_button data-v-066e9cce publicBtn baseInfo" data-comkey="{{$k}}" data-eventid="{{'1'}}" type="default">确认</button>
+    </view>
+</template>
