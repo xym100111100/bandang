@@ -1,7 +1,7 @@
 //require("../../static/js/manifest"), require("../../static/js/vendor"), require("../../static/js/pages/personalCenter/main");
 
 var API = require('../../utils/api.js')
-
+import {removeToken} from '../../utils/auth'
 var app = getApp();
 
 
@@ -21,5 +21,9 @@ Page({
   },
   init(){
    
+  },
+  loginOut(){
+    removeToken()
+    wx.reLaunch({url:'../login/main'})
   }
 });

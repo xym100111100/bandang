@@ -46,7 +46,6 @@ Page({
     })
   },
   onclickMenu(val){
-    console.log(val)
     let key = val.currentTarget.dataset.name
     switch (key) {
       case 'partner':

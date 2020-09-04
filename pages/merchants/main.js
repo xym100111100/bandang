@@ -6,16 +6,7 @@ var app = getApp();
 
 Page({
   data: {
-    merchantsList: [{
-      iconInfos:{
-        text:'商'
-      },
-      text:'广西南宁美容有限公司',
-      partnerNo:1,
-      showExpeditedCreditQRCode:true,
-      showSupCreditQRCode:true,
-      showNormalCreditQRCode:true,
-    }],
+    merchantsList: [],
     searchVal: "",
     searchPlace: "搜索商户名称",
     pageNumber: 1,
@@ -35,7 +26,13 @@ Page({
     this.init()
   },
   init(){
-    
+    API.request('/user/getMerchantsList', {
+      cell: this.data.cell
+    }, 'get', (res) => {
+      this.setData({
+        merchantsList: res.data
+      })
+    })
     
   }
 });

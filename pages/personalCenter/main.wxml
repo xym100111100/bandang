@@ -9,6 +9,6 @@
             <!-- <template is="index$1181186f" data="{{...$root[$kk+'0'],$root:$root}}" wx:if="{{env}}"></template> -->
         </view>
         <view class="_div data-v-9df7e40c footer-btn">
-            <button bindtap="handleProxy" class="_button data-v-9df7e40c" data-comkey="{{$k}}" data-eventid="{{'0'}}">退出登录</button>
+            <button bindtap="loginOut" class="_button data-v-9df7e40c" data-comkey="{{$k}}" data-eventid="{{'0'}}">退出登录</button>
         </view>
     </view>

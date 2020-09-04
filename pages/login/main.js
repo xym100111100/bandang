@@ -47,7 +47,7 @@ Page({
     API.request('/login/userLogin', {
       cell: this.data.cell
     }, 'get', (res) => {
-      console.log(res)
+      app.globalData.me = res.data.info
       setToken(res.data.token)
       wx.switchTab({
         url: "../home/main"
