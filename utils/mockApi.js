@@ -2,7 +2,8 @@ import {
   userInfo,
   oderList,
   Menu,
-  merchantsList
+  merchantsList,
+  clientDetail
 } from './mockData'
 
 
@@ -43,6 +44,12 @@ const MockData = {
     return {
       code: 0,
       data: merchantsList
+    }
+  },
+  '/order/getcClientDetail': (data) => { // 获取客户信息
+    return {
+      code: 0,
+      data: clientDetail
     }
   },
 

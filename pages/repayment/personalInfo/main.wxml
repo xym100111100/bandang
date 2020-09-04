@@ -1,2 +1,61 @@
-<import src="../../../components/repayment$eba4d2a4"></import>
-<template is="repayment$eba4d2a4" data="{{...$root['0'],$root:$root}}"></template>
+<!-- <import src="../../../components/repayment$eba4d2a4"></import>
+<template is="repayment$eba4d2a4" data="{{...$root['0'],$root:$root}}"></template> -->
+<import src="../../../components/index$28129b31"></import>
+
+<view class="_div data-v-86fd53a2 personalInfo">
+        <view class="_h2 data-v-86fd53a2">基础信息</view>
+        <view class="_div data-v-86fd53a2 baseInfo">
+            <view class="_p data-v-86fd53a2 cellLayout">
+                <label class="_span data-v-86fd53a2 title">姓名</label>
+                <text class="_text data-v-86fd53a2 info" selectable="true">{{clientDetail.clientName}}</text>
+            </view>
+            <view class="_p data-v-86fd53a2 cellLayout">
+                <label class="_span data-v-86fd53a2 title">年龄</label>
+                <text class="_text data-v-86fd53a2 info" selectable="true">{{clientDetail.age}}</text>
+            </view>
+            <view class="_p data-v-86fd53a2 cellLayout">
+                <label class="_span data-v-86fd53a2 title">手机号码</label>
+                <text bindtap="handleProxy" class="_text data-v-86fd53a2 info" data-comkey="{{$k}}" data-eventid="{{'0'}}" selectable="true">{{clientDetail.phone}}</text>
+            </view>
+            <view class="_p data-v-86fd53a2 cellLayout">
+                <label class="_span data-v-86fd53a2 title">身份证号码</label>
+                <text class="_text data-v-86fd53a2 info" selectable="true">{{clientDetail.certNo}}</text>
+            </view>
+            <view class="_p data-v-86fd53a2 cellLayout">
+                <label class="_span data-v-86fd53a2 title">联系地址</label>
+                <text class="_text data-v-86fd53a2 info" selectable="true">{{clientDetail.address}}</text>
+            </view>
+            <view class="_p data-v-86fd53a2 cellLayout">
+                <label class="_span data-v-86fd53a2 title">工作行业</label>
+                <text class="_text data-v-86fd53a2 info" selectable="true">{{clientDetail.workIndustryName}}</text>
+            </view>
+        </view>
+        <view class="_h2 data-v-86fd53a2">紧急联系人信息</view>
+        <view class="_div data-v-86fd53a2 warnLinkman">
+            <view class="_ul data-v-86fd53a2">
+                <view class="_li data-v-86fd53a2" wx:key="index" wx:for="{{clientDetail.contracts}}" >
+                    <view class="_p data-v-86fd53a2 cellLayout">
+                        <label class="_span data-v-86fd53a2 title indexName">联系人{{index+1}}</label>
+                    </view>
+                    <view class="_p data-v-86fd53a2 cellLayout">
+                        <label class="_span data-v-86fd53a2 title">联系人姓名</label>
+                        <label class="_span data-v-86fd53a2 info">{{item.contractName}}</label>
+                    </view>
+                    <view class="_p data-v-86fd53a2 cellLayout">
+                        <label class="_span data-v-86fd53a2 title">关系</label>
+                        <label class="_span data-v-86fd53a2 info">{{item.contractRelation}}</label>
+                    </view>
+                    <view class="_p data-v-86fd53a2 cellLayout">
+                        <label class="_span data-v-86fd53a2 title">联系电话</label>
+                        <label bindtap="handleProxy" class="_span data-v-86fd53a2 info" data-comkey="{{$k}}" data-eventid="{{'1-'+index}}">{{item.contractPhone}}</label>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="_h2 data-v-86fd53a2">本人备用</view>
+        <view class="_div data-v-86fd53a2 personalTel">
+            <label bindtap="handleProxy" class="_span data-v-86fd53a2 telView" data-comkey="{{$k}}" data-eventid="{{'2'}}">{{standbyPhone}}</label>
+            <label bindtap="handleProxy" class="_span data-v-86fd53a2 eidtBtn" data-comkey="{{$k}}" data-eventid="{{'3'}}">修改</label>
+        </view>
+        <template is="index$28129b31" data="{{...$root[$kk+'0'],$root:$root,$for:{default:'data-v-86fd53a2-default-0'},$slotdefault:'data-v-86fd53a2-default-0'}}"></template>
+    </view>

@@ -56,6 +56,7 @@ export  const oderList = [{
   dataSource: {
     tenderName: '章振',
     customerName: '张超',
+    adminUserNo:1,
     certNo: '22',
     orderList: [{
       orderDate: '2020-01-04',
@@ -71,6 +72,47 @@ export  const oderList = [{
   dataSource: {
     tenderName: '章振',
     customerName: '张超',
+    adminUserNo:2,
+    certNo: '22',
+    orderList: [{
+      orderDate: '2020-01-04',
+      mobile: '18278904219',
+      bdName: '张经理',
+      currBdOrder: true
+    }]
+  },
+  loanNo: 1,
+  boxType: 'order'
+},
+{
+  dataSource: {
+    tenderName: '章振',
+    customerName: '张超2',
+    adminUserNo:3,
+    certNo: '22',
+    orderList: [
+      {
+      orderDate: '2020-01-04',
+      mobile: '18278904219',
+      bdName: '张经理',
+      currBdOrder: true
+    },
+      {
+      orderDate: '2020-01-04',
+      mobile: '18278904219',
+      bdName: '张经理',
+      currBdOrder: true
+    },
+  ]
+  },
+  loanNo: 1,
+  boxType: 'order'
+},
+{
+  dataSource: {
+    tenderName: '章振',
+    customerName: '张超',
+    adminUserNo:4,
     certNo: '22',
     orderList: [{
       orderDate: '2020-01-04',
@@ -86,36 +128,7 @@ export  const oderList = [{
   dataSource: {
     tenderName: '章振',
     customerName: '张超',
-    certNo: '22',
-    orderList: [{
-      orderDate: '2020-01-04',
-      mobile: '18278904219',
-      bdName: '张经理',
-      currBdOrder: true
-    }]
-  },
-  loanNo: 1,
-  boxType: 'order'
-},
-{
-  dataSource: {
-    tenderName: '章振',
-    customerName: '张超',
-    certNo: '22',
-    orderList: [{
-      orderDate: '2020-01-04',
-      mobile: '18278904219',
-      bdName: '张经理',
-      currBdOrder: true
-    }]
-  },
-  loanNo: 1,
-  boxType: 'order'
-},
-{
-  dataSource: {
-    tenderName: '章振',
-    customerName: '张超',
+    adminUserNo:5,
     certNo: '22',
     orderList: [{
       orderDate: '2020-01-04',
@@ -180,3 +193,17 @@ export const merchantsList =  [{
   showSupCreditQRCode:true,
   showNormalCreditQRCode:true,
 }]
+
+export const clientDetail = {
+  clientName: '张超',
+  age: '12',
+  phone: '18278904219',
+  certNo: '450521199602206131',
+  address: '广西南宁龙光世纪',
+  workIndustryName: '码农',
+  contracts: [{
+    contractName: '老爸',
+    contractPhone: '127803348355',
+    contractRelation:'父子'
+  }]
+}

@@ -36,7 +36,6 @@ function request(url, data, method, onSuccess, onFailed) {
         // 模拟请求延迟
         setTimeout(() => {
             let obj = Mock(url,data)
-            console.log(obj)
             if(obj.code ===0){
                 onSuccess(obj)
             }else{

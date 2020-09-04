@@ -25,13 +25,18 @@ Page({
     this.init()
   },
   init() {
-    console.log(app.globalData)
+    
     API.request('/order/getOderList', {
       adminUserNo: app.globalData.me.adminUserNo
     }, 'get', (res) => {
       this.setData({
         listData: res.data
       })
+    })
+  },
+  getClientInfo(val){
+    wx.navigateTo({
+      url: '../repayment/personalInfo/main?clientNo='+val.currentTarget.dataset.user.dataSource.adminUserNo,
     })
   }
 });
