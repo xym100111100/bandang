@@ -58,14 +58,14 @@ Page({
           url:'../order/main'
         })
         break;
-      case 'order':
-        wx.navigateTo({
-          url:'../order/main'
-        })
-        break;
       case 'orderQuery':
         wx.navigateTo({
           url:'../orderQuery/main'
+        })
+        break;
+      case 'givingCredit':
+        wx.navigateTo({
+          url:'../givingCredit/main'
         })
         break;
     

@@ -1,6 +1,6 @@
- <import src="../../components/order$7928e4e0"></import>
-<template is="order$7928e4e0" data="{{...$root['0'],$root:$root}}"></template> 
-<!-- 
+ <!-- <import src="../../components/order$7928e4e0"></import>
+<template is="order$7928e4e0" data="{{...$root['0'],$root:$root}}"></template>  -->
+ 
 <import src="../../components/index$35892c44"></import>
 <import src="../../components/index$36ab1cab"></import>
 <view class="_div data-v-2e994f3f order-page">
@@ -9,10 +9,11 @@
         <input bindconfirm="handleProxy" bindinput="handleProxy" class="_input data-v-2e994f3f" confirmType="search"
             data-comkey="{{$k}}" data-eventid="{{'0'}}" placeholder="姓名/手机号" type="text" value="{{keywords}}"></input>
     </view>
-    <view class="_div data-v-2e994f3f" wx:if="{{noneFlag}}">
+    <view class="order-page-content" wx:if="{{noneFlag}}">
         <template is="index$35892c44" data="{{...item}}" wx:for="{{listData}}"
             wx:key="index"></template>
     </view>
+
     <template is="index$36ab1cab" data="{{...$root[$kk+'1'],$root:$root}}" wx:else></template>
     <view class="_div data-v-2e994f3f modal-cont" wx:if="{{showModal}}">
         <view class="_div data-v-2e994f3f contant">
@@ -32,4 +33,4 @@
             </view>
         </view>
     </view>
-</view> -->
+</view>

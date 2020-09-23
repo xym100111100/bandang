@@ -100,3 +100,68 @@
     border-right: none;
     color: #468cee;
 }
+
+.order-page-content{
+    margin-top: 113rpx;
+}
+.content-item{
+    background: white;
+}
+.orderBox{
+    margin: 0 25rpx;
+}
+.orderBox .header{
+    padding: 20rpx 0;
+    border-bottom: solid 1px #f9f7f7;
+}
+
+
+.idCard{
+    color: #999;
+    font-size: 27rpx;
+}
+.info{
+    padding-bottom: 44rpx;
+    border-bottom: solid 1px #f9f7f7;
+}
+.info .info-box{
+    margin: 10rpx 0;
+}
+
+.info  .title{
+    color: #999;
+    font-size: 27rpx;
+}
+
+
+
+.info .detail{
+    font-size: 27rpx;
+    color: rgba(97, 204, 253, 0.925);
+}
+
+.info  .btnGroupWrap {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.info  .takeDate{
+    border: solid 1rpx blue;
+    padding: 5rpx;
+    font-size: 29rpx;
+    color: blue;
+}
+
+.bottom-btn-item{
+    display: flex;
+    background: red;
+    justify-content: flex-end;
+}
+
+.btn-cont .btn{
+    height: 50rpx;
+    padding: 0 10rpx;
+    font-size: 21rpx;
+    line-height: 50rpx;
+    margin-right: 30rpx;
+}
